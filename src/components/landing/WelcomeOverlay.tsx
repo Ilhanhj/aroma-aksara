@@ -4,7 +4,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Leaf, CloudRain, Users, Waves } from "lucide-react";
+import { Leaf, CloudRain, Sunset, Waves } from "lucide-react";
 import { Logo } from "../icons/Logo";
 import { cn } from "@/lib/utils";
 
@@ -16,19 +16,20 @@ const options: {
   text: string;
 }[] = [
   { key: "garden", icon: <Leaf />, text: "Di Hutan Pinus" },
-  { key: "rain", icon: <CloudRain />, text: "Di tengah hujan sore" },
-  { key: "friends", icon: <Users />, text: "Bareng teman di teras" },
+  { key: "rain", icon: <CloudRain />, text: "Di tengah hujan " },
+  { key: "friends", icon: <Sunset />, text: "Di bawah senja" },
   { key: "beach", icon: <Waves />, text: "Di pinggir pantai" },
 ];
 
 const responses: Record<OptionKey, string> = {
   garden:
-    "Pilihan yang menenangkan. Kopi herbal hangat di tengah hijaunya alam adalah kombinasi sempurna untuk relaksasi.",
-  rain: "Syahdu! Kombinasi hujan dan secangkir kopi hangat memang tiada duanya. Kami siapkan yang terbaik untuk momen ini.",
+    "Wah, pilihan yang adem banget! Pecinta hutan pinus tuh pasti hatinya tenang dan tau cara healing yang asik.",
+  rain:
+    "Pilihan syahdu! Ngopi di tengah hujan sore tuh vibes-nya selalu ngena di hati. Mantap banget selera kamu.",
   friends:
-    "Momen kebersamaan yang tak terganti. Green Bean Coffee siap menemani obrolan hangat bersama orang-orang terdekat.",
+    "Wah, menikmati kopi sambil lihat langit senja itu romantis sekaligus damai. Selera kamu nggak main-main!",
   beach:
-    "Suasana santai di tepi pantai dengan secangkir kopi nikmat. Pilihan tepat untuk melepas penat dan menikmati hidup.",
+    "Fix pecinta santuy nih! Nikmatin kopi di pinggir pantai sambil denger suara ombak? Kamu tau banget cara bahagia.",
 };
 
 export function WelcomeOverlay() {

@@ -11,7 +11,7 @@ export const Logo = ({ className }: { className?: string }) => (
         <path d="M15 2L15 4" stroke="hsl(var(--accent-foreground))" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
     <span className="font-headline text-xl font-bold text-primary">
-        Kopi Hijau Alami
+        Green covery
     </span>
   </div>
 );
