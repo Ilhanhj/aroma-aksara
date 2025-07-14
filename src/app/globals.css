@@ -8,52 +8,53 @@ body {
 
 @layer base {
   :root {
-    --background: 25 15% 15%;
-    --foreground: 38 56% 90%;
-    --card: 25 15% 18%;
-    --card-foreground: 38 56% 90%;
-    --popover: 25 15% 15%;
-    --popover-foreground: 38 56% 90%;
-    --primary: 38 62% 55%;
-    --primary-foreground: 25 15% 15%;
-    --secondary: 38 25% 45%;
-    --secondary-foreground: 38 56% 90%;
-    --muted: 25 15% 30%;
-    --muted-foreground: 38 30% 70%;
-    --accent: 38 40% 35%;
-    --accent-foreground: 38 56% 90%;
+    --background: 60 56% 91%; /* #F5F5DC */
+    --foreground: 27 48% 18%; /* Darker brown for text */
+    --card: 60 56% 96%; /* Slightly lighter than background */
+    --card-foreground: 27 48% 18%;
+    --popover: 60 56% 91%;
+    --popover-foreground: 27 48% 18%;
+    --primary: 27 48% 28%; /* #6B4226 */
+    --primary-foreground: 60 56% 96%;
+    --secondary: 30 36% 49%; /* #A67C52 */
+    --secondary-foreground: 27 48% 18%;
+    --muted: 60 25% 85%;
+    --muted-foreground: 27 30% 35%;
+    --accent: 80 24% 70%; /* #B6C49D */
+    --accent-foreground: 27 48% 18%;
     --destructive: 0 63% 31%;
-    --destructive-foreground: 38 56% 90%;
-    --border: 25 15% 25%;
-    --input: 25 15% 25%;
-    --ring: 38 62% 55%;
-    --chart-1: 38 62% 55%;
-    --chart-2: 38 40% 45%;
-    --chart-3: 38 25% 35%;
-    --chart-4: 38 50% 75%;
-    --chart-5: 38 30% 60%;
+    --destructive-foreground: 60 56% 96%;
+    --border: 27 20% 75%;
+    --input: 27 20% 88%;
+    --ring: 27 48% 28%;
+    --chart-1: 27 48% 28%;
+    --chart-2: 30 36% 49%;
+    --chart-3: 80 24% 70%;
+    --chart-4: 27 30% 55%;
+    --chart-5: 30 25% 65%;
     --radius: 0.8rem;
   }
   .dark {
+    /* Keeping a dark mode consistent with the new theme, though not explicitly requested */
     --background: 25 15% 15%;
     --foreground: 38 56% 90%;
     --card: 25 15% 18%;
     --card-foreground: 38 56% 90%;
     --popover: 25 15% 15%;
     --popover-foreground: 38 56% 90%;
-    --primary: 38 62% 55%;
+    --primary: 30 36% 49%; /* Using Cinnamon Cream for dark mode primary */
     --primary-foreground: 25 15% 15%;
-    --secondary: 38 25% 45%;
+    --secondary: 27 48% 28%; /* Using Dark Coffee Brown for dark mode secondary */
     --secondary-foreground: 38 56% 90%;
     --muted: 25 15% 30%;
     --muted-foreground: 38 30% 70%;
-    --accent: 38 40% 35%;
+    --accent: 80 24% 40%; /* Darker green for accent */
     --accent-foreground: 38 56% 90%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 38 56% 90%;
     --border: 25 15% 25%;
     --input: 25 15% 25%;
-    --ring: 38 62% 55%;
+    --ring: 30 36% 49%;
   }
 }
 
