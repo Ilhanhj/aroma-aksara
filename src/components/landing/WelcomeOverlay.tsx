@@ -15,7 +15,7 @@ const options: {
   icon: React.ReactNode;
   text: string;
 }[] = [
-  { key: "garden", icon: <Leaf />, text: "Di taman belakang rumah" },
+  { key: "garden", icon: <Leaf />, text: "Di Hutan Pinus" },
   { key: "rain", icon: <CloudRain />, text: "Di tengah hujan sore" },
   { key: "friends", icon: <Users />, text: "Bareng teman di teras" },
   { key: "beach", icon: <Waves />, text: "Di pinggir pantai" },
@@ -23,12 +23,12 @@ const options: {
 
 const responses: Record<OptionKey, string> = {
   garden:
-    "Wah, pecinta suasana tenang nih! Kopi herbal bakal makin nikmat sambil dengerin suara dedaunan.",
-  rain: "Uh, suasana hujan + kopi hangat = combo terbaik! Kita racikkan yang spesial buat kamu.",
+    "Pilihan yang menenangkan. Kopi herbal hangat di tengah hijaunya alam adalah kombinasi sempurna untuk relaksasi.",
+  rain: "Syahdu! Kombinasi hujan dan secangkir kopi hangat memang tiada duanya. Kami siapkan yang terbaik untuk momen ini.",
   friends:
-    "Ngopi rame-rame emang paling seru! Siap sediakan Green Bean Coffee buat nongkrong santai.",
+    "Momen kebersamaan yang tak terganti. Green Bean Coffee siap menemani obrolan hangat bersama orang-orang terdekat.",
   beach:
-    "Asli, vibes kopi di pinggir pantai tuh gak ada obat! Waktunya menikmati kopi sehat di suasana santai.",
+    "Suasana santai di tepi pantai dengan secangkir kopi nikmat. Pilihan tepat untuk melepas penat dan menikmati hidup.",
 };
 
 export function WelcomeOverlay() {
@@ -50,7 +50,7 @@ export function WelcomeOverlay() {
     sessionStorage.setItem("welcomeOverlayShown", "true");
     setTimeout(() => {
       setIsOpen(false);
-    }, 2500);
+    }, 3500); // Increased duration to 3.5 seconds
   };
 
   return (
@@ -79,13 +79,13 @@ export function WelcomeOverlay() {
                   <h2 className="font-headline text-2xl md:text-3xl font-bold text-primary mb-6 sm:mb-8 leading-tight">
                     Kalau kamu bisa menikmati secangkir kopi sekarang, suasana apa yang paling kamu inginkan?
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {options.map((option) => (
                       <Button
                         key={option.key}
                         variant="outline"
                         size="lg"
-                        className="h-auto py-4 text-base justify-start transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-accent-foreground hover:border-primary focus:scale-105 focus:bg-accent focus:text-accent-foreground focus:border-primary focus:ring-2 focus:ring-ring"
+                        className="h-auto w-auto py-4 px-6 text-base justify-start transition-all duration-300 hover:scale-105 hover:bg-accent hover:text-accent-foreground hover:border-primary focus:scale-105 focus:bg-accent focus:text-accent-foreground focus:border-primary focus:ring-2 focus:ring-ring"
                         onClick={() => handleSelect(option.key)}
                       >
                         {option.icon}
@@ -105,7 +105,7 @@ export function WelcomeOverlay() {
                   <div className="text-5xl text-primary mb-6 animate-pulse">
                     {options.find(o => o.key === selectedOption)?.icon}
                   </div>
-                  <p className="text-xl text-foreground/90 leading-relaxed max-w-md mx-auto">
+                  <p className="text-xl text-foreground/90 leading-relaxed max-w-md mx-auto line-clamp-3">
                     {responses[selectedOption]}
                   </p>
                 </motion.div>
