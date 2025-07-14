@@ -22,6 +22,7 @@ import { Coffee, Shield, TrendingUp, Weight, Heart, User, Sparkles, Brain, Loade
 import type { CoffeeCalculatorInput, CoffeeCalculatorOutput } from "@/ai/flows/calculator-flow";
 import { coffeeCalculator } from "@/ai/flows/calculator-flow";
 import { useToast } from "@/hooks/use-toast";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   weight: z.number().min(30, { message: "Berat badan minimal 30 kg." }).max(200, { message: "Berat badan maksimal 200 kg." }),
@@ -149,13 +150,19 @@ export function CalculatorSection() {
                             value={field.value}
                             className="grid grid-cols-2 gap-4"
                           >
-                            {["1", "2", "3", "4+"].map(value => (
+                            {(["1", "2", "3", "4+"] as const).map(value => (
                               <FormItem key={value} className="flex-1">
                                 <FormControl>
                                   <RadioGroupItem value={value} id={`habit-${value}`} className="sr-only" />
                                 </FormControl>
-                                <FormLabel htmlFor={`habit-${value}`} className="flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-muted bg-transparent cursor-pointer hover:border-primary data-[state=checked]:border-primary data-[state=checked]:bg-primary/10 transition-colors">
-                                  {coffeeHabitIcons[value as keyof typeof coffeeHabitIcons]}
+                                <FormLabel
+                                  htmlFor={`habit-${value}`}
+                                  className={cn(
+                                    "flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-muted bg-transparent cursor-pointer hover:border-primary transition-colors",
+                                    field.value === value && "border-primary bg-primary/10"
+                                  )}
+                                >
+                                  {coffeeHabitIcons[value]}
                                   <span>{value} cangkir</span>
                                 </FormLabel>
                               </FormItem>
@@ -183,7 +190,13 @@ export function CalculatorSection() {
                                 <FormControl>
                                   <RadioGroupItem value={value} id={`goal-${value}`} className="sr-only" />
                                 </FormControl>
-                                <FormLabel htmlFor={`goal-${value}`} className="flex flex-col items-center justify-center gap-2 p-3 rounded-lg border-2 border-muted bg-transparent cursor-pointer hover:border-primary data-[state=checked]:border-primary data-[state=checked]:bg-primary/10 transition-colors h-full">
+                                <FormLabel
+                                  htmlFor={`goal-${value}`}
+                                  className={cn(
+                                    "flex flex-col items-center justify-center gap-2 p-3 rounded-lg border-2 border-muted bg-transparent cursor-pointer hover:border-primary transition-colors h-full",
+                                    field.value === value && "border-primary bg-primary/10"
+                                  )}
+                                >
                                    {goalIcons[value]}
                                   <span className="text-center text-sm">{value}</span>
                                 </FormLabel>
