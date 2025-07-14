@@ -12,7 +12,7 @@ const benefits = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-12 md:py-16">
+    <section id="about" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
@@ -28,7 +28,7 @@ export function AboutSection() {
               </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-4">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-6">
               Rahasia Tubuh Sehat & Ideal dalam Secangkir Kopi
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">

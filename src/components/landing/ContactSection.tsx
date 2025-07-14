@@ -54,7 +54,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-12 md:py-16">
+    <section id="contact" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

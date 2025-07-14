@@ -7,19 +7,32 @@ import { HowToServeSection } from "@/components/landing/HowToServeSection";
 import { Footer } from "@/components/landing/Footer";
 import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
+import { SectionWrapper } from "@/components/landing/SectionWrapper";
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header />
-      <main className="flex-1 space-y-12 md:space-y-16">
+      <main className="flex-1">
         <HeroSection />
-        <AboutSection />
-        <CompositionSection />
-        <BenefitsSection />
-        <CalculatorSection />
-        <HowToServeSection />
-        <ContactSection />
+        <SectionWrapper>
+          <AboutSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <CompositionSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <BenefitsSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <CalculatorSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <HowToServeSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <ContactSection />
+        </SectionWrapper>
       </main>
       <Footer />
     </div>

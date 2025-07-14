@@ -80,7 +80,7 @@ export function CalculatorSection() {
   }
 
   return (
-    <section id="calculator" className="py-12 md:py-16 bg-card">
+    <section id="calculator" className="py-12 md:py-24 lg:py-32 bg-card">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">
