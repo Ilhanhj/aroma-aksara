@@ -36,23 +36,21 @@ export function WelcomeOverlay() {
   const [selectedOption, setSelectedOption] = useState<OptionKey | null>(null);
 
   useEffect(() => {
-    // This effect runs only on the client side
     const hasSeenOverlay = sessionStorage.getItem("welcomeOverlayShown");
     if (!hasSeenOverlay) {
-      // Use a short delay to prevent flash of content before overlay shows
       const timer = setTimeout(() => setIsOpen(true), 50);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const handleSelect = (key: OptionKey) => {
-    if (selectedOption) return; // Prevent multiple clicks
+    if (selectedOption) return;
 
     setSelectedOption(key);
     sessionStorage.setItem("welcomeOverlayShown", "true");
     setTimeout(() => {
       setIsOpen(false);
-    }, 2500); // Wait 2.5 seconds before closing
+    }, 2500);
   };
 
   return (
@@ -91,7 +89,7 @@ export function WelcomeOverlay() {
                         onClick={() => handleSelect(option.key)}
                       >
                         {option.icon}
-                        <span className="ml-3 text-left">{option.text}</span>
+                        <span className="ml-3 text-left leading-snug">{option.text}</span>
                       </Button>
                     ))}
                   </div>
