@@ -18,10 +18,10 @@ export function AboutSection() {
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
              <Image
                 src="https://placehold.co/600x600.png"
-                alt="Wanita sehat menikmati kopi"
+                alt="Wanita sehat menikmati secangkir kopi di pagi hari"
                 fill
                 className="rounded-xl object-cover shadow-lg"
-                data-ai-hint="healthy woman coffee"
+                data-ai-hint="woman coffee morning"
               />
               <div className="absolute -bottom-4 -right-4 bg-accent p-4 rounded-lg shadow-xl hidden sm:block">
                   <p className="text-sm text-accent-foreground font-semibold">100% Bahan Alami</p>
