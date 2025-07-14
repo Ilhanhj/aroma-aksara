@@ -54,11 +54,11 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 lg:py-32">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">Pesan Sekarang & Rasakan Manfaatnya!</h2>
+                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Pesan Sekarang & Rasakan Manfaatnya!</h2>
                 <p className="text-muted-foreground mt-4 mb-8 leading-relaxed">
                     Jangan tunda lagi untuk hidup lebih sehat. Pesan GREEN BEAN COFFEE hari ini atau hubungi kami jika ada pertanyaan. Tim kami siap membantu Anda!
                 </p>
@@ -84,7 +84,7 @@ export function ContactSection() {
                     </div>
                 </div>
             </div>
-             <Card className="w-full max-w-lg shadow-lg">
+             <Card className="w-full max-w-lg shadow-lg rounded-xl">
                 <CardHeader>
                     <CardTitle className="font-headline text-2xl">Atau tinggalkan pesan</CardTitle>
                     <CardDescription>Isi form di bawah ini dan kami akan menghubungi Anda.</CardDescription>

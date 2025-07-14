@@ -12,8 +12,8 @@ const benefits = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 lg:py-32">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
              <Image
@@ -27,18 +27,18 @@ export function AboutSection() {
                   <p className="text-sm text-accent-foreground font-semibold">100% Bahan Alami</p>
               </div>
           </div>
-          <div className="flex flex-col gap-6">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
+          <div className="flex flex-col gap-4">
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-4">
               Rahasia Tubuh Sehat & Ideal dalam Secangkir Kopi
             </h2>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed mb-4">
               GREEN BEAN COFFEE adalah perpaduan unik biji kopi hijau pilihan dengan rempah-rempah alami Indonesia seperti jahe dan kayu manis. Diformulasikan khusus untuk Anda yang ingin menjaga kesehatan dan mencapai berat badan ideal dengan cara yang nikmat dan alami.
             </p>
             <ul className="space-y-3">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                  <span>{benefit}</span>
+                  <span className="leading-relaxed">{benefit}</span>
                 </li>
               ))}
             </ul>

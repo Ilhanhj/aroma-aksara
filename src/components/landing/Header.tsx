@@ -50,7 +50,7 @@ export function Header() {
       "sticky top-0 z-50 w-full transition-all duration-300",
       hasScrolled ? 'bg-background/80 backdrop-blur-sm border-b' : 'bg-transparent'
     )}>
-      <div className="container mx-auto px-4 h-20 flex justify-between items-center">
+      <div className="container mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
         <a href="#home" aria-label="Ke Halaman Utama">
           <Logo />
         </a>

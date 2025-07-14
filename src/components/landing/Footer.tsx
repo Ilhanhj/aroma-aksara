@@ -6,15 +6,15 @@ import { Button } from "../ui/button";
 export function Footer() {
   return (
     <footer className="bg-card border-t py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-8">
         <div className="grid md:grid-cols-3 gap-8 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             <Logo />
-            <p className="text-muted-foreground mt-4 text-sm max-w-xs">
+            <p className="text-muted-foreground mt-4 text-sm max-w-xs leading-relaxed">
               Kopi herbal alami untuk mendukung gaya hidup sehat Anda.
             </p>
           </div>
-          <div>
+          <div className="mb-6 md:mb-0">
             <h4 className="font-headline font-semibold text-primary mb-4">Tautan Cepat</h4>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="text-muted-foreground hover:text-primary transition-colors">Tentang Produk</a></li>

@@ -24,19 +24,19 @@ const ingredients = [
 
 export function CompositionSection() {
   return (
-    <section id="composition" className="py-20 lg:py-32 bg-card">
-      <div className="container mx-auto px-4">
+    <section id="composition" className="py-12 md:py-16 bg-card">
+      <div className="container mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">
             100% Komposisi Alami Pilihan
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Kami hanya menggunakan bahan-bahan terbaik dari alam, tanpa tambahan bahan kimia, untuk memastikan Anda mendapatkan manfaat maksimal.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           {ingredients.map((ingredient) => (
-            <Card key={ingredient.name} className="overflow-hidden group">
+            <Card key={ingredient.name} className="overflow-hidden group rounded-xl">
               <div className="relative h-56">
                 <Image
                   src={ingredient.image}
@@ -50,7 +50,7 @@ export function CompositionSection() {
                 <CardTitle className="font-headline text-2xl text-primary">{ingredient.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription>{ingredient.description}</CardDescription>
+                <CardDescription className="leading-relaxed">{ingredient.description}</CardDescription>
               </CardContent>
             </Card>
           ))}
