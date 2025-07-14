@@ -30,10 +30,10 @@ export default function LandingPage() {
           <BenefitsSection />
         </SectionWrapper>
         <SectionWrapper>
-          <CalculatorSection />
+           <HowToServeSection />
         </SectionWrapper>
         <SectionWrapper>
-          <HowToServeSection />
+          <CalculatorSection />
         </SectionWrapper>
         <SectionWrapper>
           <GallerySection />

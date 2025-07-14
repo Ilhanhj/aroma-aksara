@@ -17,6 +17,7 @@ const navLinks = [
   { href: '#story', label: 'Cerita' },
   { href: '#composition', label: 'Komposisi' },
   { href: '#benefits', label: 'Manfaat' },
+  { href: '#calculator', label: 'Kalkulator' },
   { href: '#contact', label: 'Pesan' },
 ];
 
@@ -63,7 +64,7 @@ export function Header() {
           key={link.href}
           href={link.href}
           onClick={() => setMobileMenuOpen(false)}
-          className="font-medium text-muted-foreground hover:text-primary transition-colors duration-300"
+          className="font-medium text-muted-foreground hover:text-primary transition-colors duration-300 py-2 md:py-0"
         >
           {link.label}
         </a>
@@ -74,8 +75,14 @@ export function Header() {
   return (
     <header className={cn(
       "sticky top-0 z-50 w-full transition-all duration-300",
-      hasScrolled ? 'bg-background/80 backdrop-blur-sm border-b' : 'bg-transparent'
+      hasScrolled ? 'shadow-md' : ''
     )}>
+      <div className={cn(
+        "absolute inset-0 -z-10 transition-opacity",
+        hasScrolled 
+          ? 'opacity-100 bg-gradient-to-b from-background to-accent/20 dark:from-card dark:to-background/80 backdrop-blur-sm' 
+          : 'opacity-0'
+      )}></div>
       <div className="container mx-auto px-4 sm:px-8 h-20 flex justify-between items-center">
         <a href="#home" aria-label="Ke Halaman Utama">
           <Logo />
@@ -98,16 +105,16 @@ export function Header() {
                   <span className="sr-only">Buka menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[280px]">
+              <SheetContent side="right" className="w-[280px] bg-background p-0">
                 <div className="p-6 h-full flex flex-col">
                   <div className="mb-8">
-                      <Logo />
+                      <a href="#home" onClick={() => setMobileMenuOpen(false)}><Logo /></a>
                   </div>
-                  <nav className="flex flex-col gap-6 text-lg">
+                  <nav className="flex flex-col gap-2 text-lg">
                     <NavItems />
                   </nav>
-                   <Button asChild className="mt-auto">
-                      <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Order Sekarang</a>
+                   <Button asChild size="lg" className="mt-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                      <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Promo Hari Ini!</a>
                    </Button>
                 </div>
               </SheetContent>
