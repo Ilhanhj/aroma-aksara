@@ -55,6 +55,8 @@ export function CalculatorSection() {
     defaultValues: {
       weight: 60,
       age: 30,
+      coffeeHabit: "1",
+      goal: "Turun Berat Badan",
     },
   });
 
