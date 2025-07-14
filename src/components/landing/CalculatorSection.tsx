@@ -144,7 +144,7 @@ export function CalculatorSection() {
                         <FormControl>
                           <RadioGroup
                             onValueChange={field.onChange}
-                            defaultValue={field.value}
+                            value={field.value}
                             className="grid grid-cols-2 gap-4"
                           >
                             {["1", "2", "3", "4+"].map(value => (
@@ -173,7 +173,7 @@ export function CalculatorSection() {
                          <FormControl>
                           <RadioGroup
                             onValueChange={field.onChange}
-                            defaultValue={field.value}
+                            value={field.value}
                             className="grid grid-cols-1 sm:grid-cols-3 gap-4"
                           >
                             {(["Turun Berat Badan", "Antioksidan", "Jaga Imun"] as const).map(value => (
