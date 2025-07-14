@@ -17,7 +17,7 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
              <Image
-                src="https://placehold.co/600x600.png"
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=2837&auto=format&fit=crop"
                 alt="Wanita sehat menikmati secangkir kopi di pagi hari"
                 fill
                 className="rounded-xl object-cover shadow-lg"
