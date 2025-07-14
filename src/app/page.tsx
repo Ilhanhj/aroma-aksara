@@ -1,5 +1,6 @@
 import { AboutSection } from "@/components/landing/AboutSection";
 import { BenefitsSection } from "@/components/landing/BenefitsSection";
+import { CalculatorSection } from "@/components/landing/CalculatorSection";
 import { CompositionSection } from "@/components/landing/CompositionSection";
 import { ContactSection } from "@/components/landing/ContactSection";
 import { HowToServeSection } from "@/components/landing/HowToServeSection";
@@ -16,6 +17,7 @@ export default function LandingPage() {
         <AboutSection />
         <CompositionSection />
         <BenefitsSection />
+        <CalculatorSection />
         <HowToServeSection />
         <ContactSection />
       </main>
