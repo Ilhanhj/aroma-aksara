@@ -9,6 +9,7 @@ import { Header } from "@/components/landing/Header";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import { GallerySection } from "@/components/landing/GallerySection";
+import { StorySection } from "@/components/landing/StorySection";
 
 export default function LandingPage() {
   return (
@@ -18,6 +19,9 @@ export default function LandingPage() {
         <HeroSection />
         <SectionWrapper>
           <AboutSection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <StorySection />
         </SectionWrapper>
         <SectionWrapper>
           <CompositionSection />
