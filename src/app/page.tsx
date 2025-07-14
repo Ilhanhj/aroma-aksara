@@ -10,10 +10,12 @@ import { HeroSection } from "@/components/landing/HeroSection";
 import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import { GallerySection } from "@/components/landing/GallerySection";
 import { StorySection } from "@/components/landing/StorySection";
+import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
 
 export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
+      <WelcomeOverlay />
       <Header />
       <main className="flex-1">
         <HeroSection />
