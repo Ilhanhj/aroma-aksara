@@ -4,19 +4,45 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Logo } from '../icons/Logo';
 import { Button } from '../ui/button';
-import { Menu, X } from 'lucide-react';
+import { Menu, Moon, Sun, X } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useTheme } from 'next-themes';
 
 const navLinks = [
   { href: '#about', label: 'Tentang' },
+  { href: '#story', label: 'Cerita' },
   { href: '#composition', label: 'Komposisi' },
   { href: '#benefits', label: 'Manfaat' },
   { href: '#contact', label: 'Pesan' },
 ];
+
+function ThemeToggle() {
+  const { setTheme, theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) {
+    return <div className="w-10 h-10" />;
+  }
+
+  return (
+    <Button
+      variant="ghost"
+      size="icon"
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      aria-label="Toggle theme"
+    >
+      <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+      <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <span className="sr-only">Toggle theme</span>
+    </Button>
+  );
+}
 
 export function Header() {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -54,36 +80,39 @@ export function Header() {
         <a href="#home" aria-label="Ke Halaman Utama">
           <Logo />
         </a>
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
           <NavItems />
         </nav>
-        <div className="hidden md:block">
-          <Button asChild>
-            <a href="#contact">Order Sekarang</a>
-          </Button>
-        </div>
-        <div className="md:hidden">
-          <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Buka menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[280px]">
-              <div className="p-6 h-full flex flex-col">
-                <div className="mb-8">
-                    <Logo />
+        <div className="flex items-center gap-2">
+          <div className="hidden md:block">
+            <Button asChild>
+              <a href="#contact">Order Sekarang</a>
+            </Button>
+          </div>
+          <ThemeToggle />
+          <div className="md:hidden">
+            <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Buka menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px]">
+                <div className="p-6 h-full flex flex-col">
+                  <div className="mb-8">
+                      <Logo />
+                  </div>
+                  <nav className="flex flex-col gap-6 text-lg">
+                    <NavItems />
+                  </nav>
+                   <Button asChild className="mt-auto">
+                      <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Order Sekarang</a>
+                   </Button>
                 </div>
-                <nav className="flex flex-col gap-6 text-lg">
-                  <NavItems />
-                </nav>
-                 <Button asChild className="mt-auto">
-                    <a href="#contact" onClick={() => setMobileMenuOpen(false)}>Order Sekarang</a>
-                 </Button>
-              </div>
-            </SheetContent>
-          </Sheet>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>

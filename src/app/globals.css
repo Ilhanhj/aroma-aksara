@@ -8,53 +8,53 @@ body {
 
 @layer base {
   :root {
-    --background: 60 56% 91%; /* #F5F5DC */
-    --foreground: 27 48% 18%; /* Darker brown for text */
-    --card: 60 56% 96%; /* Slightly lighter than background */
+    --background: 48 33% 91%; /* #F5F5DC - Light Beige */
+    --foreground: 27 48% 18%; /* Dark Coffee Brown for text on light bg */
+    --card: 48 33% 96%; /* Slightly lighter beige */
     --card-foreground: 27 48% 18%;
-    --popover: 60 56% 91%;
+    --popover: 48 33% 91%;
     --popover-foreground: 27 48% 18%;
-    --primary: 27 48% 28%; /* #6B4226 */
-    --primary-foreground: 60 56% 96%;
-    --secondary: 30 36% 49%; /* #A67C52 */
+    --primary: 27 48% 28%; /* #6B4226 - Dark Coffee Brown */
+    --primary-foreground: 48 33% 96%;
+    --secondary: 27 33% 49%; /* #A67C52 - Cinnamon Cream */
     --secondary-foreground: 27 48% 18%;
-    --muted: 60 25% 85%;
+    --muted: 48 20% 85%;
     --muted-foreground: 27 30% 35%;
-    --accent: 80 24% 70%; /* #B6C49D */
+    --accent: 80 24% 70%; /* #B6C49D - Soft Green */
     --accent-foreground: 27 48% 18%;
     --destructive: 0 63% 31%;
-    --destructive-foreground: 60 56% 96%;
+    --destructive-foreground: 48 33% 96%;
     --border: 27 20% 75%;
     --input: 27 20% 88%;
     --ring: 27 48% 28%;
     --chart-1: 27 48% 28%;
-    --chart-2: 30 36% 49%;
+    --chart-2: 27 33% 49%;
     --chart-3: 80 24% 70%;
     --chart-4: 27 30% 55%;
     --chart-5: 30 25% 65%;
     --radius: 0.8rem;
   }
+ 
   .dark {
-    /* Keeping a dark mode consistent with the new theme, though not explicitly requested */
-    --background: 25 15% 15%;
-    --foreground: 38 56% 90%;
-    --card: 25 15% 18%;
-    --card-foreground: 38 56% 90%;
-    --popover: 25 15% 15%;
-    --popover-foreground: 38 56% 90%;
-    --primary: 30 36% 49%; /* Using Cinnamon Cream for dark mode primary */
-    --primary-foreground: 25 15% 15%;
-    --secondary: 27 48% 28%; /* Using Dark Coffee Brown for dark mode secondary */
-    --secondary-foreground: 38 56% 90%;
-    --muted: 25 15% 30%;
-    --muted-foreground: 38 30% 70%;
-    --accent: 80 24% 40%; /* Darker green for accent */
-    --accent-foreground: 38 56% 90%;
+    --background: 0 0% 12%; /* #1E1E1E - Deep Charcoal */
+    --foreground: 0 0% 96%; /* #F5F5F5 - Soft White */
+    --card: 21 10% 17%; /* #302A26 - Dark Coffee Brown */
+    --card-foreground: 0 0% 96%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 27 33% 49%; /* #A67C52 - Cinnamon Cream */
+    --primary-foreground: 0 0% 12%;
+    --secondary: 82 17% 62%; /* #9DBF9E - Muted green for buttons */
+    --secondary-foreground: 0 0% 12%;
+    --muted: 22 4% 23%; /* #3D3A37 - Muted Warm Gray */
+    --muted-foreground: 0 0% 79%; /* #C9C9C9 - Soft Gray */
+    --accent: 82 17% 62%; /* Using muted green for accent in dark mode */
+    --accent-foreground: 0 0% 12%;
     --destructive: 0 63% 31%;
-    --destructive-foreground: 38 56% 90%;
-    --border: 25 15% 25%;
-    --input: 25 15% 25%;
-    --ring: 30 36% 49%;
+    --destructive-foreground: 0 0% 96%;
+    --border: 21 10% 25%;
+    --input: 22 4% 23%;
+    --ring: 27 33% 49%;
   }
 }
 
@@ -64,5 +64,6 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    @apply transition-colors duration-300 ease-in-out;
   }
 }
