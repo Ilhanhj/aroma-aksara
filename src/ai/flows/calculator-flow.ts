@@ -10,7 +10,7 @@
 import { ai } from '@/ai/genkit';
 import { z } from 'zod';
 
-export const CoffeeCalculatorInputSchema = z.object({
+const CoffeeCalculatorInputSchema = z.object({
   weight: z.number().describe('User weight in kilograms.'),
   age: z.number().describe('User age in years.'),
   coffeeHabit: z.string().describe('User daily coffee consumption habit (e.g., "1", "2", "3", "4+").'),
@@ -18,7 +18,7 @@ export const CoffeeCalculatorInputSchema = z.object({
 });
 export type CoffeeCalculatorInput = z.infer<typeof CoffeeCalculatorInputSchema>;
 
-export const CoffeeCalculatorOutputSchema = z.object({
+const CoffeeCalculatorOutputSchema = z.object({
   recommendation: z.object({
     gramsPerDay: z.string().describe('Recommended daily grams of Green Bean Coffee. Example: "5-10"'),
   }),
