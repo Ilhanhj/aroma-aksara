@@ -8,27 +8,27 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1511920183353-3c2c54533a18?q=80&w=2787&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1511920183353-3c2c54533a18?q=80&w=1887&auto=format&fit=crop",
     alt: "Kemasan produk Green Bean Coffee",
     aiHint: "coffee package flatlay",
   },
   {
-    src: "https://images.unsplash.com/photo-1610632380597-8177b6b15526?q=80&w=2864&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1610632380597-8177b6b15526?q=80&w=1887&auto=format&fit=crop",
     alt: "Biji kopi hijau dengan jahe dan kayu manis",
     aiHint: "green coffee beans",
   },
   {
-    src: "https://images.unsplash.com/photo-1495474472287-4d713b22e8b4?q=80&w=2940&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1495474472287-4d713b22e8b4?q=80&w=2070&auto=format&fit=crop",
     alt: "Secangkir kopi herbal panas",
     aiHint: "cup coffee steam",
   },
   {
-    src: "https://images.unsplash.com/photo-1528740561666-dc2479707504?q=80&w=2853&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1528740561666-dc2479707504?q=80&w=1853&auto=format=fit,crop",
     alt: "Wanita tersenyum sambil memegang produk",
     aiHint: "woman holding product",
   },
   {
-    src: "https://images.unsplash.com/photo-1545665225-b23b99e4d45e?q=80&w=2848&auto=format&fit=crop",
+    src: "https://images.unsplash.com/photo-1545665225-b23b99e4d45e?q=80&w=1887&auto=format&fit=crop",
     alt: "Penyajian kopi herbal",
     aiHint: "coffee serving tray",
   },

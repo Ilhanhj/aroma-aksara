@@ -5,19 +5,19 @@ const ingredients = [
   {
     name: "Kopi Hijau",
     description: "Mengandung asam klorogenat & kafein, antioksidan tinggi yang efektif membantu metabolisme dan pembakaran lemak.",
-    image: "https://images.unsplash.com/photo-1551030173-122aabc4489c?q=80&w=2817&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1621932333514-7d23e6178334?q=80&w=1964&auto=format&fit=crop",
     aiHint: "green coffee beans",
   },
   {
     name: "Kayu Manis",
     description: "Dengan senyawa cinnamaldehyde, bersifat anti-inflamasi, membantu mengatur gula darah, dan memberikan aroma khas yang kuat.",
-    image: "https://images.unsplash.com/photo-1556910110-a5a6350d3958?q=80&w=2940&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1563899126-c216def78696?q=80&w=1887&auto=format&fit=crop",
     aiHint: "cinnamon sticks",
   },
   {
     name: "Jahe",
     description: "Kandungan gingerol di dalamnya bersifat anti-inflamasi, melancarkan pencernaan, dan efektif meningkatkan imunitas tubuh.",
-    image: "https://images.unsplash.com/photo-1628695245842-1496a1a14132?q=80&w=2825&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599942044820-2c49a756e47b?q=80&w=1887&auto=format&fit=crop",
     aiHint: "ginger root",
   },
 ];

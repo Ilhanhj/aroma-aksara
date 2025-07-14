@@ -44,7 +44,7 @@ export function HeroSection() {
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1571288410085-a74001a4571c?q=80&w=2815&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1594262138531-e499d750346c?q=80&w=1887&auto=format&fit=crop"
                     alt="Kemasan Produk Green Bean Coffee"
                     fill
                     className="object-contain drop-shadow-2xl"
