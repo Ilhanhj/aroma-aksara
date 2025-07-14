@@ -102,10 +102,10 @@ export function WelcomeOverlay() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="flex justify-center mb-8">
+                  <div className="flex justify-center mb-8 text-4xl text-primary">
                     {options.find(o => o.key === selectedOption)?.icon}
                   </div>
-                  <p className="text-xl text-foreground/90 leading-relaxed">
+                  <p className="text-xl text-foreground/90 leading-relaxed max-w-md mx-auto">
                     {responses[selectedOption]}
                   </p>
                 </motion.div>
