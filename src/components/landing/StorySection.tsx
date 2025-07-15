@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Mountain, Sprout, FlaskConical, Quote } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const storyParts = [
   {
@@ -26,7 +27,7 @@ export function StorySection() {
   return (
     <section id="story" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 md:mb-16 lg:mb-20">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">
             Cerita di Balik Green Bean Coffee
           </h2>
@@ -36,39 +37,46 @@ export function StorySection() {
           </p>
         </div>
 
-        <div className="relative max-w-2xl mx-auto">
-          <div className="absolute left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-          {storyParts.map((part, index) => (
-            <div
-              key={index}
-              className="mb-12 flex items-center w-full"
-            >
+        <div className="relative max-w-4xl mx-auto">
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
+          
+          <div className="space-y-12 md:space-y-0">
+            {storyParts.map((part, index) => (
               <div
-                className={`w-1/2 flex ${
-                  index % 2 === 0 ? "justify-end pr-8" : "justify-start pl-8"
-                }`}
+                key={index}
+                className={cn(
+                  "relative flex items-center md:mb-12",
+                  index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                )}
               >
-                <Card className="p-6 rounded-xl shadow-lg w-full bg-card hover:shadow-xl transition-shadow">
-                  <h3 className="font-headline text-xl text-primary mb-3">
-                    {part.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {part.description}
-                  </p>
-                </Card>
+                <div
+                  className={cn(
+                    "md:w-1/2",
+                    index % 2 === 0 ? "md:pr-10" : "md:pl-10",
+                    index % 2 !== 0 && "md:text-right"
+                  )}
+                >
+                  <Card className="p-6 rounded-xl shadow-lg w-full bg-card hover:shadow-xl transition-shadow ml-12 md:ml-0">
+                    <h3 className="font-headline text-xl text-primary mb-3">
+                      {part.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed text-left md:text-inherit">
+                      {part.description}
+                    </p>
+                  </Card>
+                </div>
+                
+                {/* Icon in the middle */}
+                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background">
+                  <div className="bg-accent rounded-full p-3">{part.icon}</div>
+                </div>
               </div>
-              <div className="absolute left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-2 border-border">
-                <div className="bg-accent rounded-full p-3">{part.icon}</div>
-              </div>
-               <div className={`w-1/2 ${
-                  index % 2 !== 0 ? "order-first" : ""
-                }`}></div>
-
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         
-        <div className="text-center mt-12">
+        <div className="text-center mt-16 md:mt-20">
             <Quote className="w-8 h-8 text-secondary mx-auto mb-4" />
             <p className="font-headline text-2xl text-primary italic font-semibold max-w-md mx-auto">
             "Dari Desa, Untuk Tubuh yang Lebih Sehat."
@@ -79,3 +87,5 @@ export function StorySection() {
     </section>
   );
 }
+
+    
