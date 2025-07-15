@@ -1,4 +1,5 @@
 
+
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -6,19 +7,19 @@ const ingredients = [
   {
     name: "Kopi Hijau",
     description: "Mengandung asam klorogenat & kafein, antioksidan tinggi yang efektif membantu metabolisme dan pembakaran lemak.",
-    image: "https://images.unsplash.com/photo-1551030173-1a2952368b63?q=80&w=400&auto=format&fit=crop",
+    image: "https://placehold.co/400x300.png",
     hint: "green coffee beans"
   },
   {
     name: "Kayu Manis",
     description: "Dengan senyawa cinnamaldehyde, bersifat anti-inflamasi, membantu mengatur gula darah, dan memberikan aroma khas yang kuat.",
-    image: "https://images.unsplash.com/photo-1556910110-a5a6350d39fa?q=80&w=400&auto=format&fit=crop",
+    image: "https://placehold.co/400x300.png",
     hint: "cinnamon sticks"
   },
   {
     name: "Jahe",
     description: "Kandungan gingerol di dalamnya bersifat anti-inflamasi, melancarkan pencernaan, dan efektif meningkatkan imunitas tubuh.",
-    image: "https://images.unsplash.com/photo-1600735422894-09948243a75e?q=80&w=400&auto=format&fit=crop",
+    image: "https://placehold.co/400x300.png",
     hint: "ginger root"
   },
 ];

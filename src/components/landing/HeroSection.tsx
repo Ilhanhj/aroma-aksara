@@ -45,7 +45,7 @@ export function HeroSection() {
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1608695225333-3331b0e0f31a?q=80&w=600&auto=format&fit=crop"
+                    src="https://placehold.co/500x500.png"
                     alt="Kemasan Produk Green Bean Coffee"
                     data-ai-hint="coffee package"
                     fill
