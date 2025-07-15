@@ -1,5 +1,4 @@
 
-
 "use client";
 
 import Image from "next/image";
@@ -8,34 +7,34 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "https://placehold.co/800x800.png",
+    src: "https://placehold.co/600x600.png",
     alt: "Green Bean Coffee Product 1",
     className: "col-span-2 row-span-2",
-    hint: "coffee product package",
+    hint: "coffee product lifestyle"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/300x300.png",
     alt: "Green Bean Coffee Product 2",
     className: "col-span-1 row-span-1",
-    hint: "coffee lifestyle",
+    hint: "coffee beans"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/300x300.png",
     alt: "Green Bean Coffee Product 3",
     className: "col-span-1 row-span-1",
-    hint: "coffee beans",
+    hint: "coffee ingredients"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/300x300.png",
     alt: "Green Bean Coffee Product 4",
     className: "col-span-1 row-span-1",
-    hint: "brewing coffee",
+    hint: "brewing coffee"
   },
    {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/300x300.png",
     alt: "Green Bean Coffee Product 5",
     className: "col-span-1 row-span-1",
-    hint: "cup coffee",
+    hint: "packaged coffee"
   },
 ];
 
