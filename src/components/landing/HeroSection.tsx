@@ -53,7 +53,7 @@ export function HeroSection() {
                 />
             </div>
         </div>
-         <div className="absolute inset-0 bg-gradient-to-br from-background via-accent/40 to-background z-0"></div>
+         <div className="absolute inset-0 bg-gradient-to-br from-background via-accent/20 to-background z-0"></div>
     </section>
   );
 }
