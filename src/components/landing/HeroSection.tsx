@@ -3,8 +3,8 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
 import { ArrowRight, Coffee } from 'lucide-react';
+import { SteamRevealImage } from './SteamRevealImage';
 
 const ctaOptions = ["Order Sekarang", "Coba Sekarang", "Dapatkan Promo Hari Ini"];
 
@@ -44,12 +44,11 @@ export function HeroSection() {
                 </div>
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
-                <Image
+                <SteamRevealImage
                     src="https://images.unsplash.com/photo-1608666572379-9fb3e6138f88?q=80&w=2792"
                     alt="Kemasan Produk Green Bean Coffee"
                     data-ai-hint="coffee package"
-                    fill
-                    className="object-contain drop-shadow-2xl"
+                    imgClassName="object-contain drop-shadow-2xl"
                     priority
                 />
             </div>

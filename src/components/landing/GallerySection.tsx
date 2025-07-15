@@ -1,9 +1,9 @@
 
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { SteamRevealImage } from "./SteamRevealImage";
 
 const galleryImages = [
   {
@@ -64,14 +64,12 @@ export function GallerySection() {
               variants={variants}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Image
+              <SteamRevealImage
                 src={image.src}
                 alt={image.alt}
                 data-ai-hint={image.hint}
-                fill
-                className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
+                imgClassName="object-cover w-full h-full"
               />
-               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
             </motion.div>
           ))}
         </div>

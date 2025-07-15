@@ -20,7 +20,6 @@ const navLinks = [
   { href: '#story', label: 'Cerita' },
   { href: '#composition', label: 'Komposisi' },
   { href: '#benefits', label: 'Manfaat' },
-  { href: '#calculator', label: 'Kalkulator' },
   { href: '#contact', label: 'Pesan' },
 ];
 
