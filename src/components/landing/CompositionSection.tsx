@@ -1,25 +1,23 @@
 
+
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-const ingredients = [
+const ingredients: { name: string; description: string; image: string }[] = [
   {
     name: "Kopi Hijau",
     description: "Mengandung asam klorogenat & kafein, antioksidan tinggi yang efektif membantu metabolisme dan pembakaran lemak.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "green coffee beans",
   },
   {
     name: "Kayu Manis",
     description: "Dengan senyawa cinnamaldehyde, bersifat anti-inflamasi, membantu mengatur gula darah, dan memberikan aroma khas yang kuat.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "cinnamon sticks",
   },
   {
     name: "Jahe",
     description: "Kandungan gingerol di dalamnya bersifat anti-inflamasi, melancarkan pencernaan, dan efektif meningkatkan imunitas tubuh.",
     image: "https://placehold.co/600x400.png",
-    aiHint: "ginger root",
   },
 ];
 
@@ -36,15 +34,15 @@ export function CompositionSection() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {ingredients.map((ingredient) => (
+          {ingredients.map((ingredient, index) => (
             <Card key={ingredient.name} className="overflow-hidden group rounded-xl">
               <div className="relative h-56">
                 <Image
                   src={ingredient.image}
                   alt={ingredient.name}
+                  data-ai-hint={index === 0 ? 'green coffee' : index === 1 ? 'cinnamon' : 'ginger'}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  data-ai-hint={ingredient.aiHint}
                 />
               </div>
               <CardHeader>

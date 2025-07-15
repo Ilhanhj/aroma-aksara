@@ -1,40 +1,41 @@
 
+
 "use client";
 
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const galleryImages = [
+const galleryImages: { src: string; alt: string; className: string; hint: string; }[] = [
   {
-    src: "https://placehold.co/800x800.png",
+    src: "https://placehold.co/600x400.png",
     alt: "Green Bean Coffee Product 1",
-    aiHint: "coffee package flatlay",
     className: "col-span-2 row-span-2",
+    hint: "coffee beans"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/600x400.png",
     alt: "Green Bean Coffee Product 2",
-    aiHint: "green coffee beans",
     className: "col-span-1 row-span-1",
+    hint: "coffee product"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/600x400.png",
     alt: "Green Bean Coffee Product 3",
-    aiHint: "cup coffee steam",
     className: "col-span-1 row-span-1",
+    hint: "coffee plant"
   },
   {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/600x400.png",
     alt: "Green Bean Coffee Product 4",
-    aiHint: "coffee serving tray",
     className: "col-span-1 row-span-1",
+    hint: "coffee cup"
   },
    {
-    src: "https://placehold.co/400x400.png",
+    src: "https://placehold.co/600x400.png",
     alt: "Green Bean Coffee Product 5",
-    aiHint: "woman holding product",
     className: "col-span-1 row-span-1",
+    hint: "coffee bag"
   },
 ];
 
@@ -59,7 +60,7 @@ export function GallerySection() {
         <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-4 md:gap-6 h-[600px] md:h-[700px]">
           {galleryImages.map((image, index) => (
              <motion.div
-              key={image.src}
+              key={index}
               className={cn("relative overflow-hidden rounded-xl shadow-lg group", image.className)}
               variants={variants}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -67,9 +68,9 @@ export function GallerySection() {
               <Image
                 src={image.src}
                 alt={image.alt}
+                data-ai-hint={image.hint}
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
-                data-ai-hint={image.aiHint}
               />
                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
             </motion.div>
