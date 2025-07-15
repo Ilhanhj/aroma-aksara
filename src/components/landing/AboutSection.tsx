@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
@@ -17,7 +18,7 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
              <Image
-                src="https://images.unsplash.com/photo-1559779354-a74c762d6934?q=80&w=1887&auto=format&fit=crop"
+                src="/assets/images/products/coffe-product-6.jpg"
                 alt="Wanita sehat menikmati secangkir kopi di pagi hari"
                 fill
                 className="rounded-xl object-cover shadow-lg"
