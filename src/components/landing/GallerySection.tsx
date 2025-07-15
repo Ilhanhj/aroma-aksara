@@ -7,31 +7,31 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "https://placehold.co/800x600.png",
+    src: "https://images.unsplash.com/photo-1511920183353-3c9c93da54e2?q=80&w=2787",
     alt: "Green Bean Coffee Product 1",
     className: "col-span-2 row-span-2",
     hint: "coffee product lifestyle"
   },
   {
-    src: "https://placehold.co/400x300.png",
+    src: "https://images.unsplash.com/photo-1559441312-c4e1f7050b91?q=80&w=2864",
     alt: "Green Bean Coffee Product 2",
     className: "col-span-1 row-span-1",
     hint: "coffee beans"
   },
   {
-    src: "https://placehold.co/400x300.png",
+    src: "https://images.unsplash.com/photo-1621289846222-1444b023f0e2?q=80&w=2787",
     alt: "Green Bean Coffee Product 3",
     className: "col-span-1 row-span-1",
     hint: "coffee ingredients"
   },
   {
-    src: "https://placehold.co/400x300.png",
+    src: "https://images.unsplash.com/photo-1495474472287-4d713b20e5f9?q=80&w=2940",
     alt: "Green Bean Coffee Product 4",
     className: "col-span-1 row-span-1",
     hint: "brewing coffee"
   },
    {
-    src: "https://placehold.co/400x300.png",
+    src: "https://images.unsplash.com/photo-1528699633785-c91814a809ab?q=80&w=2940",
     alt: "Green Bean Coffee Product 5",
     className: "col-span-1 row-span-1",
     hint: "packaged coffee"
