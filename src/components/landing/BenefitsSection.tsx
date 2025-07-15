@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { HeartPulse, Leaf, Scale, ShieldCheck, Zap } from "lucide-react";
+import { Brain, HeartPulse, Leaf, Scale, ShieldCheck, Zap } from "lucide-react";
 
 const benefits = [
   {
@@ -14,7 +14,7 @@ const benefits = [
   },
   {
     icon: <HeartPulse className="w-8 h-8 text-primary" />,
-    title: "Jaga Tekanan Darah",
+    title: "Jaga Kesehatan Jantung",
     description: "Membantu menstabilkan tekanan darah dan kadar gula dalam tubuh.",
   },
   {
@@ -26,6 +26,11 @@ const benefits = [
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
     title: "Daya Tahan Tubuh",
     description: "Sifat anti-inflamasi dari jahe dan kayu manis meningkatkan imunitas.",
+  },
+  {
+    icon: <Brain className="w-8 h-8 text-primary" />,
+    title: "Menjaga Kesehatan Otak",
+    description: "Antioksidan dalam kopi hijau dapat membantu melindungi fungsi otak.",
   },
 ];
 
@@ -41,9 +46,9 @@ export function BenefitsSection() {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="text-center flex flex-col items-center p-6 border-2 border-transparent hover:border-secondary hover:shadow-lg transition-all duration-300 rounded-xl">
+            <Card key={index} className="text-center flex flex-col items-center p-6 border-2 border-transparent hover:border-secondary hover:shadow-lg transition-all duration-300 rounded-xl bg-background/50 hover:bg-background">
               <CardHeader className="p-0 mb-4">
-                <div className="bg-accent rounded-full p-4 mb-4 w-max mx-auto">
+                <div className="bg-accent rounded-full p-4 mb-4 w-max mx-auto transition-transform duration-300 group-hover:scale-110">
                     {benefit.icon}
                 </div>
                 <CardTitle className="font-headline text-xl text-primary">{benefit.title}</CardTitle>
