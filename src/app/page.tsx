@@ -11,6 +11,7 @@ import { SectionWrapper } from "@/components/landing/SectionWrapper";
 import { GallerySection } from "@/components/landing/GallerySection";
 import { StorySection } from "@/components/landing/StorySection";
 import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
+import { ThemeLinkSection } from "@/components/landing/ThemeLinkSection";
 
 export default function LandingPage() {
   return (
@@ -43,6 +44,7 @@ export default function LandingPage() {
         <SectionWrapper>
           <ContactSection />
         </SectionWrapper>
+        <ThemeLinkSection />
       </main>
       <Footer />
     </div>
