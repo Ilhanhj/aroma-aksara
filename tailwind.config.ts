@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Poppins', 'sans-serif'],
+        body: ['Nunito', 'sans-serif'],
+        headline: ['"Baloo 2"', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
