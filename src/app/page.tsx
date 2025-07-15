@@ -1,3 +1,4 @@
+
 import { AboutSection } from "@/components/landing/AboutSection";
 import { BenefitsSection } from "@/components/landing/BenefitsSection";
 import { CompositionSection } from "@/components/landing/CompositionSection";
@@ -12,7 +13,6 @@ import { StorySection } from "@/components/landing/StorySection";
 import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
 import { FloatingLinkButton } from "@/components/landing/FloatingLinkButton";
 import { ThemeLinkSection } from "@/components/landing/ThemeLinkSection";
-import { DragToBrewSection } from "@/components/landing/DragToBrewSection";
 import { FaqSection } from "@/components/landing/FaqSection";
 
 export default function LandingPage() {
@@ -36,9 +36,6 @@ export default function LandingPage() {
         </SectionWrapper>
         <SectionWrapper>
            <HowToServeSection />
-        </SectionWrapper>
-        <SectionWrapper>
-           <DragToBrewSection />
         </SectionWrapper>
         <SectionWrapper>
           <GallerySection />
