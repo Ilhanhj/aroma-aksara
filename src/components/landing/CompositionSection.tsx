@@ -18,7 +18,7 @@ const ingredients = [
   {
     name: "Jahe",
     description: "Kandungan gingerol di dalamnya bersifat anti-inflamasi, melancarkan pencernaan, dan efektif meningkatkan imunitas tubuh.",
-    image: "https://images.unsplash.com/photo-1599942044820-2c49a756e47b?q=80&w=1887&auto=format&fit=crop",
+    image: "/assets/images/products/coffe-product-3.jpg",
     aiHint: "ginger root",
   },
 ];
