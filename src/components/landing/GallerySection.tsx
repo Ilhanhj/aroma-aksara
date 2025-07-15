@@ -7,31 +7,31 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "/assets/images/products/coffe-product-1.jpg",
+    src: "https://placehold.co/800x800.png",
     alt: "Green Bean Coffee Product 1",
     aiHint: "coffee package flatlay",
     className: "col-span-2 row-span-2",
   },
   {
-    src: "/assets/images/products/coffe-product-2.jpg",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 2",
     aiHint: "green coffee beans",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/assets/images/products/coffe-product-3.jpg",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 3",
     aiHint: "cup coffee steam",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "/assets/images/products/coffe-product-4.jpg",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 4",
     aiHint: "coffee serving tray",
     className: "col-span-1 row-span-1",
   },
    {
-    src: "/assets/images/products/coffe-product-5.jpg",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 5",
     aiHint: "woman holding product",
     className: "col-span-1 row-span-1",
