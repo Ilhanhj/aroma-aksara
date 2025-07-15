@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from 'react';
@@ -87,17 +88,17 @@ export function Header() {
         <a href="#home" aria-label="Ke Halaman Utama">
           <Logo />
         </a>
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
           <NavItems />
         </nav>
         <div className="flex items-center gap-2">
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button asChild>
               <a href="#contact">Order Sekarang</a>
             </Button>
           </div>
           <ThemeToggle />
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
