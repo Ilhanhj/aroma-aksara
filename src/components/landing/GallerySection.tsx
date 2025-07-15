@@ -7,32 +7,32 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1511920183353-3c2c54533a18?q=80&w=1887&auto=format&fit=crop",
-    alt: "Kemasan produk Green Bean Coffee",
+    src: "/assets/images/products/coffe-product-1.jpg",
+    alt: "Green Bean Coffee Product 1",
     aiHint: "coffee package flatlay",
     className: "col-span-2 row-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1610632380597-8177b6b15526?q=80&w=1887&auto=format&fit=crop",
-    alt: "Biji kopi hijau dengan jahe dan kayu manis",
+    src: "/assets/images/products/coffe-product-2.jpg",
+    alt: "Green Bean Coffee Product 2",
     aiHint: "green coffee beans",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1495474472287-4d713b22e8b4?q=80&w=2070&auto=format&fit=crop",
-    alt: "Secangkir kopi herbal panas",
+    src: "/assets/images/products/coffe-product-3.jpg",
+    alt: "Green Bean Coffee Product 3",
     aiHint: "cup coffee steam",
     className: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1545665225-b23b99e4d45e?q=80&w=1887&auto=format&fit=crop",
-    alt: "Penyajian kopi herbal",
+    src: "/assets/images/products/coffe-product-4.jpg",
+    alt: "Green Bean Coffee Product 4",
     aiHint: "coffee serving tray",
     className: "col-span-1 row-span-1",
   },
    {
-    src: "https://images.unsplash.com/photo-1528740561666-dc2479707504?q=80&w=1853&auto=format=fit,crop",
-    alt: "Wanita tersenyum sambil memegang produk",
+    src: "/assets/images/products/coffe-product-5.jpg",
+    alt: "Green Bean Coffee Product 5",
     aiHint: "woman holding product",
     className: "col-span-1 row-span-1",
   },
@@ -65,7 +65,7 @@ export function GallerySection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Image
-                src={image.src}
+                src={`https://placehold.co/600x400.png?text=${encodeURIComponent(image.alt)}`}
                 alt={image.alt}
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
