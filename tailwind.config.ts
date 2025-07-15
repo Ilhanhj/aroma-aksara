@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['Nunito', 'sans-serif'],
-        headline: ['"Baloo 2"', 'sans-serif'],
+        body: ['"DM Sans"', 'sans-serif'],
+        headline: ['"DM Sans"', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
