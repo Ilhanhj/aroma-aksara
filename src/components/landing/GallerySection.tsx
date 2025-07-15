@@ -7,31 +7,31 @@ import { cn } from "@/lib/utils";
 
 const galleryImages = [
   {
-    src: "https://placehold.co/600x600.png",
+    src: "https://images.unsplash.com/photo-1511920183353-3c9c9b53ce27?q=80&w=600&auto=format&fit=crop",
     alt: "Green Bean Coffee Product 1",
     className: "col-span-2 row-span-2",
     hint: "coffee product lifestyle"
   },
   {
-    src: "https://placehold.co/300x300.png",
+    src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=300&auto=format&fit=crop",
     alt: "Green Bean Coffee Product 2",
     className: "col-span-1 row-span-1",
     hint: "coffee beans"
   },
   {
-    src: "https://placehold.co/300x300.png",
+    src: "https://images.unsplash.com/photo-1621996512026-6152a4f419c8?q=80&w=300&auto=format&fit=crop",
     alt: "Green Bean Coffee Product 3",
     className: "col-span-1 row-span-1",
     hint: "coffee ingredients"
   },
   {
-    src: "https://placehold.co/300x300.png",
+    src: "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?q=80&w=300&auto=format&fit=crop",
     alt: "Green Bean Coffee Product 4",
     className: "col-span-1 row-span-1",
     hint: "brewing coffee"
   },
    {
-    src: "https://placehold.co/300x300.png",
+    src: "https://images.unsplash.com/photo-1563822552899-705886d3a669?q=80&w=300&auto=format&fit=crop",
     alt: "Green Bean Coffee Product 5",
     className: "col-span-1 row-span-1",
     hint: "packaged coffee"

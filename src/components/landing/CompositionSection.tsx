@@ -6,19 +6,19 @@ const ingredients = [
   {
     name: "Kopi Hijau",
     description: "Mengandung asam klorogenat & kafein, antioksidan tinggi yang efektif membantu metabolisme dan pembakaran lemak.",
-    image: "https://placehold.co/400x300.png",
+    image: "https://images.unsplash.com/photo-1618169422026-6a583997c65c?q=80&w=400&auto=format&fit=crop",
     hint: "green coffee beans"
   },
   {
     name: "Kayu Manis",
     description: "Dengan senyawa cinnamaldehyde, bersifat anti-inflamasi, membantu mengatur gula darah, dan memberikan aroma khas yang kuat.",
-    image: "https://placehold.co/400x300.png",
+    image: "https://images.unsplash.com/photo-1556910110-a5a6350d39fa?q=80&w=400&auto=format&fit=crop",
     hint: "cinnamon sticks"
   },
   {
     name: "Jahe",
     description: "Kandungan gingerol di dalamnya bersifat anti-inflamasi, melancarkan pencernaan, dan efektif meningkatkan imunitas tubuh.",
-    image: "https://placehold.co/400x300.png",
+    image: "https://images.unsplash.com/photo-1600735422894-09948243a75e?q=80&w=400&auto=format&fit=crop",
     hint: "ginger root"
   },
 ];
