@@ -65,7 +65,7 @@ export function GallerySection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Image
-                src={`https://placehold.co/600x400.png?text=${encodeURIComponent(image.alt)}`}
+                src={image.src}
                 alt={image.alt}
                 fill
                 className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
