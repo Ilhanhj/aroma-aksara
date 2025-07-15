@@ -12,7 +12,7 @@ import { StorySection } from "@/components/landing/StorySection";
 import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
 import { FloatingLinkButton } from "@/components/landing/FloatingLinkButton";
 import { ThemeLinkSection } from "@/components/landing/ThemeLinkSection";
-import { CalculatorSection } from "@/components/landing/CalculatorSection";
+import { DragToBrewSection } from "@/components/landing/DragToBrewSection";
 
 export default function LandingPage() {
   return (
@@ -37,7 +37,7 @@ export default function LandingPage() {
            <HowToServeSection />
         </SectionWrapper>
         <SectionWrapper>
-           <CalculatorSection />
+           <DragToBrewSection />
         </SectionWrapper>
         <SectionWrapper>
           <GallerySection />
