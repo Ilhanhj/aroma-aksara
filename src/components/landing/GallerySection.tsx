@@ -6,36 +6,36 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-const galleryImages: { src: string; alt: string; className: string; hint: string; }[] = [
+const galleryImages = [
   {
-    src: "https://placehold.co/600x400.png",
+    src: "https://placehold.co/800x800.png",
     alt: "Green Bean Coffee Product 1",
     className: "col-span-2 row-span-2",
-    hint: "coffee beans"
+    hint: "coffee product package",
   },
   {
-    src: "https://placehold.co/600x400.png",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 2",
     className: "col-span-1 row-span-1",
-    hint: "coffee product"
+    hint: "coffee lifestyle",
   },
   {
-    src: "https://placehold.co/600x400.png",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 3",
     className: "col-span-1 row-span-1",
-    hint: "coffee plant"
+    hint: "coffee beans",
   },
   {
-    src: "https://placehold.co/600x400.png",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 4",
     className: "col-span-1 row-span-1",
-    hint: "coffee cup"
+    hint: "brewing coffee",
   },
    {
-    src: "https://placehold.co/600x400.png",
+    src: "https://placehold.co/400x400.png",
     alt: "Green Bean Coffee Product 5",
     className: "col-span-1 row-span-1",
-    hint: "coffee bag"
+    hint: "cup coffee",
   },
 ];
 

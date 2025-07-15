@@ -21,7 +21,7 @@ export function AboutSection() {
              <Image
                 src="https://placehold.co/600x600.png"
                 alt="Wanita sehat menikmati secangkir kopi di pagi hari"
-                data-ai-hint="woman drinking coffee"
+                data-ai-hint="woman coffee"
                 fill
                 className="rounded-xl object-cover shadow-lg"
               />

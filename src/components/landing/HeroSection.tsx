@@ -44,16 +44,16 @@ export function HeroSection() {
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
                 <Image
-                    src="https://placehold.co/512x512.png"
+                    src="https://placehold.co/600x600.png"
                     alt="Kemasan Produk Green Bean Coffee"
-                    data-ai-hint="coffee product"
+                    data-ai-hint="coffee package"
                     fill
                     className="object-contain drop-shadow-2xl"
                     priority
                 />
             </div>
         </div>
-         <div className="absolute inset-0 bg-gradient-to-br from-background via-accent/20 to-background z-0"></div>
+         <div className="absolute inset-0 bg-gradient-to-br from-background via-accent/40 to-background z-0"></div>
     </section>
   );
 }
