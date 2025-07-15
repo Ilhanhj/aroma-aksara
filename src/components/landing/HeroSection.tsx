@@ -1,37 +1,55 @@
 
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Coffee } from 'lucide-react';
 import { SteamRevealImage } from './SteamRevealImage';
+import { gsap } from "gsap";
 
 const ctaOptions = ["Order Sekarang", "Coba Sekarang", "Dapatkan Promo Hari Ini"];
 
 export function HeroSection() {
   const [ctaText, setCtaText] = useState(ctaOptions[0]);
+  const heroContentRef = useRef(null);
 
   useEffect(() => {
     // This logic needs to be client-side only
     const randomIndex = Math.floor(Math.random() * ctaOptions.length);
     setCtaText(ctaOptions[randomIndex]);
+
+    const el = heroContentRef.current;
+    if (el) {
+        gsap.fromTo(
+            (el as HTMLElement).querySelectorAll(".animate-in"),
+            { opacity: 0, y: 20 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: "power3.out",
+                delay: 0.5,
+            }
+        );
+    }
   }, []);
 
   return (
-    <section id="home" className="relative min-h-[calc(100vh-80px)] pt-12 pb-12 md:pt-16 md:pb-16">
+    <section id="home" className="relative min-h-[calc(100vh-80px)] pt-12 pb-12 md:pt-16 md:pb-16 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-8 h-full flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-12">
-            <div className="text-center lg:text-left max-w-xl z-10">
-                <div className="inline-flex items-center gap-2 bg-accent/50 text-accent-foreground px-4 py-1 rounded-full text-sm mb-4">
+            <div ref={heroContentRef} className="text-center lg:text-left max-w-xl z-10">
+                <div className="inline-flex items-center gap-2 bg-accent/50 text-accent-foreground px-4 py-1 rounded-full text-sm mb-4 animate-in">
                     <Coffee className="w-4 h-4"/>
                     <span>Kopi Herbal Alami Indonesia</span>
                 </div>
-                <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight mb-4 md:mb-6">
+                <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight mb-4 md:mb-6 animate-in">
                     Nikmati Sehatnya, Rasakan Bedanya!
                 </h1>
-                <p className="mt-4 mb-8 text-lg text-muted-foreground leading-relaxed md:mt-6 md:mb-10">
+                <p className="mt-4 mb-8 text-lg text-muted-foreground leading-relaxed md:mt-6 md:mb-10 animate-in">
                     Awali harimu dengan secangkir GREEN BEAN COFFEE, perpaduan sempurna rasa nikmat dan manfaat kesehatan dari alam.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-in">
                     <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
                         <a href="#contact">
                             {ctaText}
@@ -45,7 +63,7 @@ export function HeroSection() {
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
                 <SteamRevealImage
-                    src="https://images.unsplash.com/photo-1608666572379-9fb3e6138f88?q=80&w=2792"
+                    src="https://placehold.co/600x600.png"
                     alt="Kemasan Produk Green Bean Coffee"
                     data-ai-hint="coffee package"
                     imgClassName="object-contain drop-shadow-2xl"
