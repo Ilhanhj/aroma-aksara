@@ -9,6 +9,8 @@ import { Menu, Moon, Sun, X } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { useTheme } from 'next-themes';
@@ -107,11 +109,12 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] bg-background p-0">
+                <SheetHeader className="p-6 pb-0">
+                  <SheetTitle className="sr-only">Menu Navigasi</SheetTitle>
+                  <a href="#home" onClick={() => setMobileMenuOpen(false)}><Logo /></a>
+                </SheetHeader>
                 <div className="p-6 h-full flex flex-col">
-                  <div className="mb-8">
-                      <a href="#home" onClick={() => setMobileMenuOpen(false)}><Logo /></a>
-                  </div>
-                  <nav className="flex flex-col gap-2 text-lg">
+                  <nav className="flex flex-col gap-2 text-lg mt-8">
                     <NavItems />
                   </nav>
                    <Button asChild size="lg" className="mt-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground">
