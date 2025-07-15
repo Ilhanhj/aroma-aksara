@@ -12,6 +12,7 @@ import { StorySection } from "@/components/landing/StorySection";
 import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
 import { FloatingLinkButton } from "@/components/landing/FloatingLinkButton";
 import { ThemeLinkSection } from "@/components/landing/ThemeLinkSection";
+import { CalculatorSection } from "@/components/landing/CalculatorSection";
 
 export default function LandingPage() {
   return (
@@ -34,6 +35,9 @@ export default function LandingPage() {
         </SectionWrapper>
         <SectionWrapper>
            <HowToServeSection />
+        </SectionWrapper>
+        <SectionWrapper>
+           <CalculatorSection />
         </SectionWrapper>
         <SectionWrapper>
           <GallerySection />
