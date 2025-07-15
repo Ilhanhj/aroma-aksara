@@ -13,6 +13,7 @@ import { WelcomeOverlay } from "@/components/landing/WelcomeOverlay";
 import { FloatingLinkButton } from "@/components/landing/FloatingLinkButton";
 import { ThemeLinkSection } from "@/components/landing/ThemeLinkSection";
 import { DragToBrewSection } from "@/components/landing/DragToBrewSection";
+import { FaqSection } from "@/components/landing/FaqSection";
 
 export default function LandingPage() {
   return (
@@ -41,6 +42,9 @@ export default function LandingPage() {
         </SectionWrapper>
         <SectionWrapper>
           <GallerySection />
+        </SectionWrapper>
+        <SectionWrapper>
+          <FaqSection />
         </SectionWrapper>
         <SectionWrapper>
           <ThemeLinkSection />
