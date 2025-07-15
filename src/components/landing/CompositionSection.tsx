@@ -6,7 +6,7 @@ const ingredients = [
   {
     name: "Kopi Hijau",
     description: "Mengandung asam klorogenat & kafein, antioksidan tinggi yang efektif membantu metabolisme dan pembakaran lemak.",
-    image: "https://images.unsplash.com/photo-1618169422026-6a583997c65c?q=80&w=400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1551030173-1a2952368b63?q=80&w=400&auto=format&fit=crop",
     hint: "green coffee beans"
   },
   {

@@ -12,6 +12,7 @@ export function HeroSection() {
   const [ctaText, setCtaText] = useState(ctaOptions[0]);
 
   useEffect(() => {
+    // This logic needs to be client-side only
     const randomIndex = Math.floor(Math.random() * ctaOptions.length);
     setCtaText(ctaOptions[randomIndex]);
   }, []);
@@ -44,7 +45,7 @@ export function HeroSection() {
             </div>
             <div className="relative w-full max-w-sm lg:max-w-lg h-96 lg:h-[500px] z-10 mb-8 md:mb-0">
                 <Image
-                    src="https://images.unsplash.com/photo-1621996512026-6152a4f419c8?q=80&w=600&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1608695225333-3331b0e0f31a?q=80&w=600&auto=format&fit=crop"
                     alt="Kemasan Produk Green Bean Coffee"
                     data-ai-hint="coffee package"
                     fill
