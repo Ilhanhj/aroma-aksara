@@ -1,5 +1,5 @@
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Mountain, Sprout, FlaskConical, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -39,40 +39,43 @@ export function StorySection() {
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          {/* Vertical Timeline Line - hidden on mobile, visible on desktop */}
-          <div className="absolute left-6 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
 
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-12">
             {storyParts.map((part, index) => (
               <div
                 key={index}
-                className="relative flex items-start md:grid md:grid-cols-2 md:gap-x-16"
+                className="relative flex items-start group"
               >
                 {/* Icon Circle */}
                 <div
                   className={cn(
-                    "absolute left-6 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background",
-                    "flex-shrink-0"
+                    "absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background",
+                    "flex-shrink-0 z-10"
                   )}
                 >
                   <div className="bg-accent rounded-full p-3">{part.icon}</div>
                 </div>
 
-                {/* Card Content */}
-                <div
-                  className={cn(
-                    "w-full ml-16 md:ml-0",
-                    index % 2 === 0 ? "md:col-start-1 md:text-right" : "md:col-start-2 md:text-left"
-                  )}
-                >
-                  <Card className="p-6 rounded-xl shadow-lg bg-card hover:shadow-xl transition-shadow w-full">
-                    <h3 className={cn("font-headline text-xl text-primary mb-3", index % 2 === 0 ? "md:text-right" : "md:text-left")}>
-                      {part.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed text-left md:text-inherit">
-                      {part.description}
-                    </p>
-                  </Card>
+                {/* Card Content Wrapper */}
+                <div className={cn(
+                    "w-full flex",
+                    index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                )}>
+                  <div className={cn(
+                      "pl-12 md:pl-0 md:w-5/12",
+                      index % 2 === 0 ? "md:pr-8" : "md:pl-8"
+                  )}>
+                    <Card className="p-6 rounded-xl shadow-lg bg-card hover:shadow-xl transition-shadow duration-300 w-full">
+                      <h3 className={cn("font-headline text-xl text-primary mb-3", index % 2 === 0 ? "md:text-left" : "md:text-right")}>
+                        {part.title}
+                      </h3>
+                      <p className="text-muted-foreground leading-relaxed text-left">
+                        {part.description}
+                      </p>
+                    </Card>
+                  </div>
                 </div>
               </div>
             ))}
