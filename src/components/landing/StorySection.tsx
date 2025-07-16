@@ -1,5 +1,5 @@
 
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mountain, Sprout, FlaskConical, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -28,7 +28,7 @@ export function StorySection() {
   return (
     <section id="story" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
-        <div className="text-center mb-12 md:mb-16 lg:mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">
             Cerita di Balik Green Bean Coffee
           </h2>
@@ -39,41 +39,47 @@ export function StorySection() {
         </div>
 
         <div className="relative max-w-4xl mx-auto">
-          {/* Vertical Timeline Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
-          
-          <div className="space-y-12">
+          {/* Vertical Timeline Line - hidden on mobile, visible on desktop */}
+          <div className="absolute left-6 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2 hidden md:block"></div>
+
+          <div className="space-y-12 md:space-y-16">
             {storyParts.map((part, index) => (
               <div
                 key={index}
-                className="relative flex items-start md:items-center"
+                className="relative flex items-start md:grid md:grid-cols-2 md:gap-x-16"
               >
+                {/* Icon Circle */}
                 <div
                   className={cn(
-                    "w-full md:w-1/2 ml-10 md:ml-0",
-                    index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8 md:order-2"
+                    "absolute left-6 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background",
+                    "flex-shrink-0"
+                  )}
+                >
+                  <div className="bg-accent rounded-full p-3">{part.icon}</div>
+                </div>
+
+                {/* Card Content */}
+                <div
+                  className={cn(
+                    "w-full ml-16 md:ml-0",
+                    index % 2 === 0 ? "md:col-start-1 md:text-right" : "md:col-start-2 md:text-left"
                   )}
                 >
                   <Card className="p-6 rounded-xl shadow-lg bg-card hover:shadow-xl transition-shadow w-full">
                     <h3 className={cn("font-headline text-xl text-primary mb-3", index % 2 === 0 ? "md:text-right" : "md:text-left")}>
                       {part.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed text-left">
+                    <p className="text-muted-foreground leading-relaxed text-left md:text-inherit">
                       {part.description}
                     </p>
                   </Card>
-                </div>
-                
-                {/* Icon in the middle */}
-                <div className={cn("absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background", index % 2 === 0 ? "" : "md:order-1")}>
-                  <div className="bg-accent rounded-full p-3">{part.icon}</div>
                 </div>
               </div>
             ))}
           </div>
         </div>
         
-        <div className="text-center mt-16 md:mt-20">
+        <div className="text-center mt-16 md:mt-24">
             <Quote className="w-8 h-8 text-secondary mx-auto mb-4" />
             <p className="font-headline text-2xl text-primary italic font-semibold max-w-md mx-auto">
             "Dari Desa, Untuk Tubuh yang Lebih Sehat."
