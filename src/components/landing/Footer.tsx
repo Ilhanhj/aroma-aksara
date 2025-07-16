@@ -1,7 +1,8 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Instagram, Users } from "lucide-react";
 import { Logo } from "../icons/Logo";
 import { WhatsappIcon } from "../icons/WhatsappIcon";
 import { Button } from "../ui/button";
+import { TiktokIcon } from "../icons/TiktokIcon";
 
 export function Footer() {
   return (
@@ -21,6 +22,7 @@ export function Footer() {
               <li><a href="#composition" className="text-muted-foreground hover:text-primary transition-colors">Komposisi</a></li>
               <li><a href="#benefits" className="text-muted-foreground hover:text-primary transition-colors">Manfaat</a></li>
               <li><a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">Pesan</a></li>
+              <li><a href="https://aksara-muda-website.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">Website Tim</a></li>
             </ul>
           </div>
           <div>
@@ -35,13 +37,18 @@ export function Footer() {
                     </a>
                  </Button>
                  <Button asChild variant="ghost" size="icon">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                        <Facebook className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <TiktokIcon className="h-5 w-5 text-muted-foreground hover:text-primary" />
                     </a>
                  </Button>
                  <Button asChild variant="ghost" size="icon">
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                         <WhatsappIcon className="h-5 w-5 text-muted-foreground hover:text-primary" />
+                    </a>
+                 </Button>
+                 <Button asChild variant="ghost" size="icon">
+                    <a href="https://aksara-muda-website.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Website Tim">
+                        <Users className="h-5 w-5 text-muted-foreground hover:text-primary" />
                     </a>
                  </Button>
               </div>

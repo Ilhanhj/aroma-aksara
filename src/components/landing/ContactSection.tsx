@@ -17,8 +17,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../ui/card";
-import { Facebook, Instagram, Send } from "lucide-react";
+import { Instagram, Send } from "lucide-react";
 import { WhatsappIcon } from "../icons/WhatsappIcon";
+import { TiktokIcon } from "../icons/TiktokIcon";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -77,8 +78,8 @@ export function ContactSection() {
                             </a>
                         </Button>
                         <Button asChild variant="outline" size="icon">
-                            <a href="#" target="_blank" aria-label="Facebook">
-                                <Facebook className="h-4 w-4" />
+                            <a href="#" target="_blank" aria-label="TikTok">
+                                <TiktokIcon className="h-4 w-4" />
                             </a>
                         </Button>
                     </div>
