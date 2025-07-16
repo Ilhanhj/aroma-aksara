@@ -61,7 +61,7 @@ export function HeroSection() {
           <SteamRevealImage src={coffeProduct} alt="Kemasan Produk Green Bean Coffee" data-ai-hint="coffee package" imgClassName="object-cover drop-shadow-2xl rounded-xl" priority />
         </div>
       </div>
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-accent/40 to-background z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 via-background to-secondary/10 z-0"></div>
     </section>
   );
 }

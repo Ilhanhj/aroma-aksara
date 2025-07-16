@@ -65,5 +65,6 @@ body {
   body {
     @apply bg-background text-foreground;
     @apply transition-colors duration-300 ease-in-out;
+    @apply bg-gradient-to-b from-background to-card;
   }
 }

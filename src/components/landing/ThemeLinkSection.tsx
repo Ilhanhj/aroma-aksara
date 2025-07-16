@@ -6,7 +6,7 @@ export function ThemeLinkSection() {
   return (
     <section id="theme-link" className="py-12 md:py-16">
       <div className="container mx-auto px-4 sm:px-8">
-        <Card className="bg-gradient-to-r from-accent/30 via-card to-accent/30 border-2 border-accent/40 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+        <Card className="bg-gradient-to-br from-primary/10 via-card to-accent/20 border-2 border-primary/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
           <CardContent className="p-8 md:p-12 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
             <div className="flex items-center gap-6">
               <div className="flex-shrink-0 hidden sm:block">
