@@ -1,3 +1,4 @@
+
 import { Card } from "@/components/ui/card";
 import { Mountain, Sprout, FlaskConical, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -41,34 +42,30 @@ export function StorySection() {
           {/* Vertical Timeline Line */}
           <div className="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-border -translate-x-1/2"></div>
           
-          <div className="space-y-12 md:space-y-0">
+          <div className="space-y-12">
             {storyParts.map((part, index) => (
               <div
                 key={index}
-                className={cn(
-                  "relative flex items-center md:mb-12",
-                  index % 2 === 0 ? "md:justify-start" : "md:justify-end"
-                )}
+                className="relative flex items-start md:items-center"
               >
                 <div
                   className={cn(
-                    "md:w-1/2",
-                    index % 2 === 0 ? "md:pr-10" : "md:pl-10",
-                    index % 2 !== 0 && "md:text-right"
+                    "w-full md:w-1/2 ml-10 md:ml-0",
+                    index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8 md:order-2"
                   )}
                 >
-                  <Card className="p-6 rounded-xl shadow-lg w-full bg-card hover:shadow-xl transition-shadow ml-12 md:ml-0">
-                    <h3 className="font-headline text-xl text-primary mb-3">
+                  <Card className="p-6 rounded-xl shadow-lg bg-card hover:shadow-xl transition-shadow w-full">
+                    <h3 className={cn("font-headline text-xl text-primary mb-3", index % 2 === 0 ? "md:text-right" : "md:text-left")}>
                       {part.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed text-left md:text-inherit">
+                    <p className="text-muted-foreground leading-relaxed text-left">
                       {part.description}
                     </p>
                   </Card>
                 </div>
                 
                 {/* Icon in the middle */}
-                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background">
+                <div className={cn("absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background", index % 2 === 0 ? "" : "md:order-1")}>
                   <div className="bg-accent rounded-full p-3">{part.icon}</div>
                 </div>
               </div>
