@@ -17,7 +17,7 @@ export function AboutSection() {
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-lg mx-auto lg:mx-0">
-            <Image src="/images/products/coffe-product-7.jpg" alt="Wanita sehat menikmati secangkir kopi di pagi hari" fill className="rounded-xl object-cover shadow-lg" />
+            <img src="/images/products/coffe-product-7.jpg" alt="Wanita sehat menikmati secangkir kopi di pagi hari" className="rounded-xl object-cover shadow-lg" />
 
             <div className="absolute -bottom-4 -right-4 bg-accent p-4 rounded-lg shadow-xl hidden sm:block">
               <p className="text-sm text-accent-foreground font-semibold">100% Bahan Alami</p>
