@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useRef, useEffect } from "react";
@@ -11,11 +10,7 @@ type SteamRevealImageProps = Omit<ImageProps, "className"> & {
   imgClassName?: string;
 };
 
-export function SteamRevealImage({
-  containerClassName,
-  imgClassName,
-  ...props
-}: SteamRevealImageProps) {
+export function SteamRevealImage({ containerClassName, imgClassName, ...props }: SteamRevealImageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const steamRef = useRef<SVGSVGElement>(null);
   const tl = useRef<gsap.core.Timeline | null>(null);
@@ -49,45 +44,15 @@ export function SteamRevealImage({
   }, []);
 
   return (
-    <div
-      ref={containerRef}
-      className={cn("relative w-full h-full overflow-hidden", containerClassName)}
-    >
-      <Image
-        fill
-        {...props}
-        className={cn("transition-transform duration-500 ease-in-out group-hover:scale-105", imgClassName)}
-      />
-      <svg
-        ref={steamRef}
-        className="pointer-events-none absolute inset-0 h-full w-full opacity-0"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
+    <div ref={containerRef} className={cn("relative w-full h-full overflow-hidden rounded-xl", containerClassName)}>
+      <Image fill {...props} className={cn("transition-transform duration-500 ease-in-out group-hover:scale-105 rounded-xl", imgClassName)} />
+      <svg ref={steamRef} className="pointer-events-none absolute inset-0 h-full w-full opacity-0" viewBox="0 0 100 100" preserveAspectRatio="none">
         <defs>
           <filter id="steam-filter">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.02 0.05"
-              numOctaves="2"
-              result="turbulence"
-            />
-            <feDisplacementMap
-              in="SourceGraphic"
-              in2="turbulence"
-              scale="10"
-              xChannelSelector="R"
-              yChannelSelector="G"
-            />
+            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.05" numOctaves="2" result="turbulence" />
+            <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="10" xChannelSelector="R" yChannelSelector="G" />
           </filter>
         </defs>
-        <rect
-          width="100"
-          height="100"
-          fill="hsla(var(--background)/0.8)"
-          className="dark:fill-black/60"
-          filter="url(#steam-filter)"
-        />
       </svg>
     </div>
   );
