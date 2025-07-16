@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import ginger from "@/assets/images/ingredients/ginger.jpg";
-import cinnamon from "@/assets/images/ingredients/cinnamon.jpg";
-import greenbean from "@/assets/images/ingredients/greenbean.jpg";
+import ginger from "@/public/images/ingredients/ginger.jpg";
+import cinnamon from "@/public/images/ingredients/cinnamon.jpg";
+import greenbean from "@/public/images/ingredients/greenbean.jpg";
 
 const ingredients = [
   {
