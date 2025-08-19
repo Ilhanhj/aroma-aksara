@@ -34,7 +34,7 @@ export function ContactSection() {
     defaultValues: {
       name: "",
       phone: "",
-      message: "Halo, saya tertarik dengan produk GREEN BEAN COFFEE.",
+      message: "Halo, saya tertarik dengan produk KOPI DUKUH IBUN.",
     },
   });
 

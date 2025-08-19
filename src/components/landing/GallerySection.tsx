@@ -11,19 +11,19 @@ import coffeProduct7 from "@/public/images/products/coffe-product-7.jpg";
 const galleryImages = [
   {
     src: coffeProduct7,
-    alt: "Green Bean Coffee Product 1",
+    alt: "Kopi Dukuh Ibun Premium Product 1",
     className: "col-span-2 row-span-2",
     hint: "coffee product lifestyle",
   },
   {
     src: coffeProduct5,
-    alt: "Green Bean Coffee Product 2",
+    alt: "Kopi Dukuh Ibun Premium Product 2",
     className: "col-span-1 row-span-1",
     hint: "coffee beans",
   },
   {
     src: coffeProduct6,
-    alt: "Green Bean Coffee Product 3",
+    alt: "Kopi Dukuh Ibun Premium Product 3",
     className: "col-span-1 row-span-1",
     hint: "coffee ingredients",
   },
@@ -40,7 +40,7 @@ export function GallerySection() {
       <div className="container mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Galeri Produk</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Lihat lebih dekat bagaimana GREEN BEAN COFFEE dapat menjadi bagian dari gaya hidup sehat Anda.</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Lihat lebih dekat bagaimana KOPI DUKUH IBUN PREMIUM dapat menjadi bagian dari gaya hidup sehat Anda.</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-3 md:grid-rows-2 gap-4 md:gap-6 h-[600px] md:h-[700px]">

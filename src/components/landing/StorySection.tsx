@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Mountain, Sprout, FlaskConical, Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -6,21 +5,20 @@ import { cn } from "@/lib/utils";
 const storyParts = [
   {
     icon: <Mountain className="w-8 h-8 text-primary" />,
-    title: "Dari Petani Lokal Terbaik",
+    title: "Proses Tradisional yang Terjaga",
     description:
-      "Perjalanan kami dimulai dari lereng subur di pedesaan Indonesia. Kami bekerja sama langsung dengan petani kopi lokal yang berdedikasi untuk menanam biji kopi hijau berkualitas tinggi secara organik dan berkelanjutan.",
+      "Dikelola dengan kepiawaian, diproses dengan standar specialty. Mulai dari pemetikan selektif, pencucian, hingga penyangraian presisi—tiap tahap menjaga karakter asli biji. Hasilnya adalah profil rasa seimbang dengan aroma memikat dan body yang bersih.",
   },
   {
     icon: <Sprout className="w-8 h-8 text-primary" />,
     title: "Proses Tradisional yang Terjaga",
     description:
-      "Setiap biji kopi dipanen dan diproses dengan metode tradisional yang diwariskan turun-temurun. Tanpa pemanggangan berlebih, kami menjaga kandungan asam klorogenat alami yang menjadi kunci manfaat kesehatan kopi hijau.",
+      "Dikelola dengan kepiawaian, diproses dengan standar specialty. Mulai dari pemetikan selektif, pencucian, hingga penyangraian presisi—tiap tahap menjaga karakter asli biji. Hasilnya adalah profil rasa seimbang dengan aroma memikat dan body yang bersih.",
   },
   {
     icon: <FlaskConical className="w-8 h-8 text-primary" />,
-    title: "Inspirasi Resep Warisan",
-    description:
-      "Terinspirasi dari resep jamu warisan nenek moyang, kami memadukan kopi hijau dengan kehangatan jahe dan aroma kayu manis. Lahirlah sebuah minuman fungsional yang tidak hanya nikmat, tapi juga menyehatkan.",
+    title: "Inspirasi Rasa yang Hangat",
+    description: "Nuansa rasa yang familiar namun istimewa. Aroma Aksara menghadirkan manis keemasan, sentuhan citrus segar, dan kehangatan 'warm spice' yang halus—menginspirasi ritual kopi harian yang sederhana, tenang, dan bermakna.",
   },
 ];
 
@@ -28,13 +26,18 @@ export function StorySection() {
   return (
     <section id="story" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
+<<<<<<< HEAD
         <div className="text-center mb-12 md:mb-20">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">
             Cerita di Balik Green Bean Coffee
           </h2>
+=======
+        <div className="text-center mb-12 md:mb-16 lg:mb-20">
+          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Cerita di Balik Aroma Aksara</h2>
+>>>>>>> 1f75dca (editing content)
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Lebih dari sekadar kopi, ini adalah dedikasi kami untuk kesehatan
-            dan warisan alam Indonesia.
+            Lebih dari sekadar kopi, ini adalah perayaan rasa dan jejak alam Nusantara. Kami meramu kopi single-origin dari perbukitan Dukuh Ibun menjadi secangkir pengalaman—manis alami, bisikan citrus, dan hangatnya rempah lembut—yang
+            meninggalkan aftertaste bersih dan berkesan.
           </p>
         </div>
 
@@ -44,6 +47,7 @@ export function StorySection() {
 
           <div className="space-y-12">
             {storyParts.map((part, index) => (
+<<<<<<< HEAD
               <div
                 key={index}
                 className="relative flex items-start group"
@@ -55,6 +59,18 @@ export function StorySection() {
                     "flex-shrink-0 z-10"
                   )}
                 >
+=======
+              <div key={index} className="relative flex items-start md:items-center">
+                <div className={cn("w-full md:w-1/2 ml-10 md:ml-0", index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8 md:order-2")}>
+                  <Card className="p-6 rounded-xl shadow-lg bg-card hover:shadow-xl transition-shadow w-full">
+                    <h3 className={cn("font-headline text-xl text-primary mb-3", index % 2 === 0 ? "md:text-right" : "md:text-left")}>{part.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-left">{part.description}</p>
+                  </Card>
+                </div>
+
+                {/* Icon in the middle */}
+                <div className={cn("absolute left-4 md:left-1/2 -translate-x-1/2 bg-background p-2 rounded-full border-4 border-background", index % 2 === 0 ? "" : "md:order-1")}>
+>>>>>>> 1f75dca (editing content)
                   <div className="bg-accent rounded-full p-3">{part.icon}</div>
                 </div>
 
@@ -81,6 +97,7 @@ export function StorySection() {
             ))}
           </div>
         </div>
+<<<<<<< HEAD
         
         <div className="text-center mt-16 md:mt-24">
             <Quote className="w-8 h-8 text-secondary mx-auto mb-4" />
@@ -88,7 +105,13 @@ export function StorySection() {
             "Dari Desa, Untuk Tubuh yang Lebih Sehat."
             </p>
         </div>
+=======
+>>>>>>> 1f75dca (editing content)
 
+        <div className="text-center mt-16 md:mt-20">
+          <Quote className="w-8 h-8 text-secondary mx-auto mb-4" />
+          <p className="font-headline text-2xl text-primary italic font-semibold max-w-md mx-auto">“Alami dari Desa, Sehatkan Tubuh, Tenangkan Rasa”</p>
+        </div>
       </div>
     </section>
   );

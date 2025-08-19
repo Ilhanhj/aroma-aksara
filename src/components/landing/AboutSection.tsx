@@ -4,11 +4,15 @@ import { CheckCircle2 } from "lucide-react";
 import coffeProduct from "@/public/images/products/coffe-product-7.jpg";
 
 const benefits = [
-  "Membantu menurunkan berat badan",
-  "Kaya akan antioksidan untuk melawan radikal bebas",
-  "Menurunkan tekanan darah dan kadar gula darah",
-  "Meningkatkan metabolisme tubuh secara alami",
-  "Sebagai antiinflamasi dan meningkatkan daya tahan tubuh",
+  "100% Arabica Single-Origin — biji pilihan dari kebun lokal Dukuh Ibun.",
+
+  "Profil rasa seimbang — manis alami, sedikit acidity cerah, dan hint warm spice.",
+
+  "Proses tradisional & berkualitas — diproses oleh petani setempat dengan standar specialty.",
+
+  "Aroma memikat & aftertaste bersih — cocok dinikmati pagi atau sore.",
+
+  "Mendukung petani lokal — setiap pembelian membantu kesejahteraan komunitas setempa.",
 ];
 
 export function AboutSection() {
@@ -23,10 +27,10 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-6">Rahasia Tubuh Sehat & Ideal dalam Secangkir Kopi</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-6">Rahasia Harmoni Rasa dari Perbukitan Ibun</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              GREEN BEAN COFFEE adalah perpaduan unik biji kopi hijau pilihan dengan rempah-rempah alami Indonesia seperti jahe dan kayu manis. Diformulasikan khusus untuk Anda yang ingin menjaga kesehatan dan mencapai berat badan ideal
-              dengan cara yang nikmat dan alami.
+              Aroma Aksara — Arabica Dukuh Ibun adalah kopi single-origin hasil pegunungan Dukuh Ibun. Setiap biji diproses dengan teliti untuk menghasilkan cita rasa manis alami, sentuhan citrus, dan hangatnya rempah lembut. Nikmati
+              secangkir yang meninggalkan aftertaste bersih dan kenangan rasa yang tahan lama.
             </p>
             <ul className="space-y-3">
               {benefits.map((benefit, index) => (

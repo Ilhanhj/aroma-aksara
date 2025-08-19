@@ -41,10 +41,12 @@ export function HeroSection() {
         <div ref={heroContentRef} className="text-center lg:text-left max-w-xl z-10">
           <div className="inline-flex items-center gap-2 bg-accent/50 text-accent-foreground px-4 py-1 rounded-full text-sm mb-4 animate-in">
             <Coffee className="w-4 h-4" />
-            <span>Kopi Herbal Alami Indonesia</span>
+            <span>100% Arabica Dukuh Ibun</span>
           </div>
-          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight mb-4 md:mb-6 animate-in">Nikmati Sehatnya, Rasakan Bedanya!</h1>
-          <p className="mt-4 mb-8 text-lg text-muted-foreground leading-relaxed md:mt-6 md:mb-10 animate-in">Awali harimu dengan secangkir GREEN BEAN COFFEE, perpaduan sempurna rasa nikmat dan manfaat kesehatan dari alam.</p>
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight mb-4 md:mb-6 animate-in">Aroma Aksara – Harmoni Rasa dari Perbukitan Ibun</h1>
+          <p className="mt-4 mb-8 text-lg text-muted-foreground leading-relaxed md:mt-6 md:mb-10 animate-in">
+            Awali harimu dengan secangkir Arabica Dukuh Ibun. Perpaduan manis alami, sentuhan citrus, dan hangatnya rempah lembut menghadirkan harmoni rasa yang bersih dan berkesan.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-in">
             <Button asChild size="lg" className="shadow-lg hover:shadow-xl transition-shadow">
               <a href="#contact">
