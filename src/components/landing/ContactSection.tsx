@@ -52,7 +52,7 @@ export function ContactSection() {
       <div className="container mx-auto px-4 sm:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Pesan Sekarang & Rasakan Manfaatnya!</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4 md:mb-6">Pesan Sekarang & Rasakan Manfaatnya!</h2>
             <p className="text-muted-foreground mt-4 mb-8 leading-relaxed">Jangan tunda lagi untuk hidup lebih sehat. Pesan GREEN BEAN COFFEE hari ini atau hubungi kami jika ada pertanyaan. Tim kami siap membantu Anda!</p>
             <div className="flex flex-col gap-4">
               <Button asChild size="lg" className="justify-start">

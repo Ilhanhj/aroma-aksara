@@ -33,7 +33,7 @@ export function FaqSection() {
           <div className="mx-auto bg-accent rounded-full p-3 w-max mb-4">
             <HelpCircle className="w-8 h-8 text-primary" />
           </div>
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Pertanyaan yang Sering Diajukan</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4 md:mb-6">Pertanyaan yang Sering Diajukan</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Tidak menemukan jawaban Anda? Hubungi kami langsung melalui halaman kontak.</p>
         </div>
         <div className="max-w-3xl mx-auto">

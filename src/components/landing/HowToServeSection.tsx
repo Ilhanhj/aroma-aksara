@@ -24,7 +24,7 @@ export function HowToServeSection() {
     <section id="serving" className="py-12 md:py-24 lg:py-32">
       <div className="container mx-auto px-4 sm:px-8">
         <div className="text-center mb-12">
-          <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Cara Penyajian Mudah</h2>
+          <h2 className="font-headline text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4 md:mb-6">Cara Penyajian Mudah</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">Hanya butuh 3 langkah sederhana untuk menikmati secangkir kopi sehat.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">

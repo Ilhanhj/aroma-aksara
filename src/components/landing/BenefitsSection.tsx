@@ -40,7 +40,7 @@ export function BenefitsSection() {
   return (
     <section id="benefits" className="py-12 md:py-24 lg:py-32 bg-card">
       <div className="container mx-auto px-4 sm:px-8 text-center">
-        <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-4 md:mb-6">Manfaat Terbaik dari Alam</h2>
+        <h2 className="font-headline text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-4 md:mb-6">Manfaat Terbaik dari Alam</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">Setiap tegukan Kopi Dukuh Ibun Premium memberikan kebaikan alami yang dibutuhkan tubuh Anda setiap hari. </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (

@@ -4,17 +4,10 @@ import React from "react";
 
 export const Logo = ({ className }: { className?: string }) => (
   <div className={cn("flex items-center gap-2", className)}>
-<<<<<<< HEAD
-    <Coffee className="h-8 w-8 text-primary" />
-    <span className="font-headline text-xl font-bold text-primary">
-      Kopi Hijau Alami
-    </span>
-=======
     <img
       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFU0lEQVR4nO1YaYgcVRBu7wMPvDUqgsEbwQiJiuCFaNBonKl67pqYrBqNBxETN7tT1RsdIoKQ9QTBhIRonH5vZPBcdXEDGkRFEiUiSARFI2hiRF3jFdeoibzubNJd3T3TM2ZnVtiC+THd9arrq3qv6qvnOGMyJmOSSUrF6Yd4rGZphhcN4UbNsMUQ/qQZ12rGXlOACc5olO2Os4d2caZm+NYwbq/204T95Z628c5okYpSexmGpbUcFyB+NwzXO6NBNGGpHud3gmDcZgjuaKnzHqtZtaOdv8pG2xC+HwcBf3sFmNoS5yuuOt4w/iIcWmcPrQBwstUvFot7alJzNONQ9D38WOrOndB0AIZgkYjod6arfZxh/Dr8vMLqqPA6jyFvIy/WVprq/LKuaw/WDJvDTpRZTQuA4VeR59R2qlxvCOeKzG023H5M0wB4BZgajSB8breI7xzDO5F3BXVZUuXShB8bhq2G4KFKUR3eNOetGILHI04SLPRfBAAiJVUzuE6CaFdN8grqbKcVYkRFKRfgkp2OkZotyuXaemz33z15P8MKNeNThuAjTbBJE/5lGAbtf0OwWFP+8uGMNwgAvgw7WXJzxw2/W0HXHeFvjTAIN39lLZv2sBvGB6zDGfvIJ2WCKxoDwPBb2Niq4sV7R9/jq/KMPF3s2D/NXpnUDMP4QyPNUBM8XHc2AiqQDkCTuiD+wTh1qBTVQZrhlUY6uYmewcX1AWBYHzHQ1T5O6hiCZaFIDcgo6XtvONIQrE52CgY14aPGVVfb8hroYl+NbNxeBwBcU6tUWmqtGTZYWi2bmaZph/ldO4HklQnm9xWnHCjIopchCz9n7iWGYbmI2INJera5aUIVfmYzYRhfT3D+gySabRgeievCpsA2/Cqe35cVwG0ifWvS5oTYWoKFCekfsOchrqsm+6w1Emn8bJhfaVb3iJ6zPtOBtmVT8hmP8xfWBN4NZwU1PeLQu5Wi2lfq2n0fG5AIN4aJn61slgyKrXReTQD+BwhWii3QX3MN44CI2IZwD6nR7f8oubnzE/zQEZsFvDUTANtE5Faw80Fd+gRTknQtN7IOC/3OxKC4qksE5bFMAPzFjKvE4i1pW8kQviAO3MpUu6TmyL29ZPbsfRLtMtwoMrUiM4DSAnWaf/MgUm0KKhfWs/RCE/yZda8awjdE9LvTweLNoiIuzQxgh4HpCTV5UcShAtwiIrqu6g2HLI8L8qekgmWYJ87ik3UBCIxgZ7jcydrvM8sIAHV/mq1yT9uJIqKD1b6tGZ8RlWpu3QB8EAQdwxzpOTd3brXOXY2d2tovy6xT9bv4aaQwFPIXNQQgcDR/uu2yduCPfMRy+dBHKvPVsVUcKooMLEnVLcAEobvVUpiGAWSl35V56oA03WDU3KVbJjUjVZfxCZGtvt3ufOBUtAKllUSP85fKiD7bmTs67azICmhvPEYGgKAE9uNSZwfr/FBUtOfTbEqGqgm+SaIkuwvAm+IQXxPXwd5opcJtJcpNTLaH7XGSBx3OSEmM1zAsF+87EnpJYkf1XHWOnAht5v7TkF9LLL0Q0R3yevIn7ZqHo5cA9tIgqZqUKDfRMHwv6Yss2yMiCRPY25oVya1gD7ydqWPrCZXs0MF2xJlOM0TSiaSfnRVkJSn3tI2XRDCUyV6nWeKPkoRvVb8iwbvsvFxidabnqpsM48uG4J/ENaHbwKaJHbrtSFgrE1WzxDikWd3ptEoszYjdamR1nvC9cnfbGU6rxd5/2huEpEOZsl1W21uIES2VjUiloA61F1KG8CXD+EVA+mDQdm5N8JoP0lWTWu3nmIyJ8z+XfwEABt0Wn4GBRAAAAABJRU5ErkJggg=="
       alt="coffee-beans-"
     />
-    <span className="font-headline text-xl font-bold text-primary">Aroma Aksara</span>
->>>>>>> 1f75dca (editing content)
+    <span className="font-headline text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Aroma Aksara</span>
   </div>
 );

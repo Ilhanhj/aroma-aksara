@@ -43,7 +43,9 @@ export function HeroSection() {
             <Coffee className="w-4 h-4" />
             <span>100% Arabica Dukuh Ibun</span>
           </div>
-          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold text-primary leading-tight mb-4 md:mb-6 animate-in">Aroma Aksara – Harmoni Rasa dari Perbukitan Ibun</h1>
+          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent leading-tight mb-4 md:mb-6 animate-in">
+            Aroma Aksara – Harmoni Rasa dari Perbukitan Ibun
+          </h1>
           <p className="mt-4 mb-8 text-lg text-muted-foreground leading-relaxed md:mt-6 md:mb-10 animate-in">
             Awali harimu dengan secangkir Arabica Dukuh Ibun. Perpaduan manis alami, sentuhan citrus, dan hangatnya rempah lembut menghadirkan harmoni rasa yang bersih dan berkesan.
           </p>

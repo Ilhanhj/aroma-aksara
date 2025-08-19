@@ -27,7 +27,7 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mb-2 md:mb-6">Rahasia Harmoni Rasa dari Perbukitan Ibun</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2 md:mb-6">Rahasia Harmoni Rasa dari Perbukitan Ibun</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Aroma Aksara — Arabica Dukuh Ibun adalah kopi single-origin hasil pegunungan Dukuh Ibun. Setiap biji diproses dengan teliti untuk menghasilkan cita rasa manis alami, sentuhan citrus, dan hangatnya rempah lembut. Nikmati
               secangkir yang meninggalkan aftertaste bersih dan kenangan rasa yang tahan lama.

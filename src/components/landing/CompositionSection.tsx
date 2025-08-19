@@ -9,7 +9,7 @@ export function CompositionSection() {
       <div className="container mx-auto px-4 sm:px-8">
         <div className="max-w-4xl mx-auto text-center mb-14">
           <Badge className="px-3 py-1 text-sm rounded-full mb-4 bg-primary/10 text-primary shadow-sm">Komposisi Utama</Badge>
-          <h2 className="font-headline text-4xl md:text-5xl font-bold text-primary mb-6">Satu Biji, Sejuta Manfaat</h2>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-6">Satu Biji, Sejuta Manfaat</h2>
           <p className="text-muted-foreground text-lg md:text-xl leading-relaxed">
             Kami percaya pada kesederhanaan. Hanya <span className="font-semibold text-primary">biji kopi Ibun murni</span>, tanpa campuran lain. Kaya akan <span className="font-semibold">asam klorogenat</span> dan antioksidan, kopi Ibun
             membantu metabolisme, mendukung energi, dan menjaga tubuh tetap bugar secara alami.
