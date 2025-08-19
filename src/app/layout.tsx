@@ -1,11 +1,11 @@
-import type {Metadata} from 'next';
-import { Toaster } from "@/components/ui/toaster"
-import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
+import type { Metadata } from "next";
+import { Toaster } from "@/components/ui/toaster";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: 'Kopi Hijau Alami - Green Bean Coffee',
-  description: 'Nikmati Sehatnya, Rasakan Bedanya! Kopi herbal alami untuk kesehatan Anda.',
+  title: "Kopi Dukuh Ibun Premium",
+  description: "Cita rasa kopi terbaik dari Dukuh Ibun. Nikmati aroma khas dan kualitas premium untuk setiap momen istimewa Anda.",
 };
 
 export default function RootLayout({
@@ -21,12 +21,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
           <Toaster />
         </ThemeProvider>
