@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SteamRevealImage } from "./SteamRevealImage";
 
-import coffeProduct5 from "@/public/images/products/coffe-product-5.jpg";
-import coffeProduct6 from "@/public/images/products/coffe-product-6.jpg";
-import coffeProduct7 from "@/public/images/products/coffe-product-7.jpg";
+import coffeProduct5 from "@/public/images/products/coffe-1.jpg";
+import coffeProduct6 from "@/public/images/products/coffe-2.jpg";
+import coffeProduct7 from "@/public/images/products/coffe-3.jpg";
 
 const galleryImages = [
   {

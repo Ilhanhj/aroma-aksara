@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
-import coffeProduct from "@/public/images/products/coffe-product-7.jpg";
+import coffeProduct from "@/public/images/products/coffe-4.jpg";
 
 const benefits = [
   "100% Arabica Single-Origin — biji pilihan dari kebun lokal Dukuh Ibun.",

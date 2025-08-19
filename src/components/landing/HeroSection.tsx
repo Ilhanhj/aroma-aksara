@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Coffee } from "lucide-react";
 import { SteamRevealImage } from "./SteamRevealImage";
 import { gsap } from "gsap";
-import coffeProduct from "@/public/images/products/coffe-product-5.jpg";
+import coffeProduct from "@/public/images/products/coffe-5.jpg";
 
 const ctaOptions = ["Order Sekarang", "Coba Sekarang", "Dapatkan Promo Hari Ini"];
 
